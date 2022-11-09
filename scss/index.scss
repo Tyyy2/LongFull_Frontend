@@ -1,0 +1,135 @@
+//--Mixin
+$gray-1: rgb(230, 230, 230);
+$gray-2: rgb(180, 180, 180);
+$gray-3: rgb(130, 130, 130);
+$gray-4: rgb(100, 100, 100);
+$gray-5: rgb(80, 80, 80);
+
+@mixin size($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin flex-row($justify_content, $align_items) {
+    display: flex;
+    justify-content: $justify_content;
+    align-items: $align_items;
+}
+
+@mixin flex-col($align_items, $justify_content) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $align_items;
+    align-items: $justify_content;
+}
+
+@mixin font($px, $weight, $family, $color) {
+    font-size: $px;
+    font-weight: $weight;
+    font-family: $family;
+    color: $color;
+}
+
+@mixin position-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+@mixin keyframe($animation_name,
+    $animation_duration,
+    $animation_count,
+    $animation_time_function) {
+    animation-name: $animation_name;
+    animation-duration: $animation_duration;
+    animation-iteration-count: $animation_count;
+    animation-timing-function: $animation_time_function;
+}
+
+@mixin transition($transition_time, $transition_delay, $transition_funtion) {
+    transition-duration: $transition_time;
+    transition-delay: $transition_delay;
+    transition-timing-function: $transition_funtion;
+}
+
+//--End of Mixin
+header {
+    @include size(100%, 130px);
+    position: relative;
+    z-index: 3;
+
+    .nav-bar {
+        @include size(100%, 100%);
+        @include flex-row(space-around, center);
+        background-color: transparent;
+
+        a {
+            text-decoration: none;
+        }
+
+        .logo {
+            @include size(10%, 100%);
+            background-color: $gray-2;
+
+            .logo-img {
+                @include size(100%, 100%);
+                object-fit: fill;
+
+            }
+        }
+
+        .price-btn {
+            @include size(193px, 57px);
+            @include flex-row(center, center);
+
+            //background-color: $gray-3;
+            a {
+                @include font(32px, none, none, black);
+            }
+        }
+
+        .nav-btn-area {
+            @include size(50%, 100%);
+            @include flex-row(space-between, center);
+
+            // background-color: $gray-4;
+            .nav-btn-style {
+                @include size(119px, 37px);
+                @include flex-row(center, center);
+                list-style: none;
+
+                //background-color: $gray-2;
+                a {
+                    @include font(24px, none, none, black);
+                }
+            }
+        }
+
+        .social-media-area {
+            @include size(10%, 100%);
+            @include flex-row(center, center);
+
+            //background-color: $gray-2;
+            .social-style {
+                @include size(50px, 50px);
+                @include flex-row(center, center);
+                margin-right: 20px;
+                color: black;
+
+                //background-color: $gray-3;
+                i {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}
+
+//--control header
+.nav-change {
+    height: 80px;
+
+}
+
+//--End of control header
