@@ -16,7 +16,7 @@ $gray-5: rgb(80, 80, 80);
     align-items: $align_items;
 }
 
-@mixin flex-col($align_items, $justify_content) {
+@mixin flex-col($justify_content, $align_items ) {
     display: flex;
     flex-direction: column;
     justify-content: $align_items;
@@ -54,82 +54,55 @@ $gray-5: rgb(80, 80, 80);
 }
 
 //--End of Mixin
-header {
-    @include size(100%, 130px);
-    position: relative;
-    z-index: 3;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-    .nav-bar {
-        @include size(100%, 100%);
-        @include flex-row(space-around, center);
-        background-color: transparent;
+main {
+    @include size(100%, 3788px);
+    position: absolute;
+    top: -130px;
+    z-index: 1;
 
-        a {
-            text-decoration: none;
+    .banner {
+        @include size(100%, 969px);
+        background-color: $gray-1;
+        position: relative;
+
+        .slogan {
+            @include size(392px, 48px);
+            background-color: $gray-2;
+            position: absolute;
+            left: 232px;
+            top: 427px;
+        }
+    }
+
+    .news-area {
+        @include size(100%, 742px);
+        @include flex-col(start, space-around);
+        padding: 70px 120px;
+        background-color: white;
+        border: 1px black solid;
+
+        .news-title {
+            @include size(130px, 45px);
+            @include flex-row(center, center);
+            @include font(24px, none, none, black);
+
+            background-color: $gray-1;
         }
 
-        .logo {
-            @include size(10%, 100%);
+        .news-card-area {
+            @include size(100%, 200px);
             background-color: $gray-2;
 
-            .logo-img {
-                @include size(100%, 100%);
-                object-fit: fill;
-
-            }
-        }
-
-        .price-btn {
-            @include size(193px, 57px);
-            @include flex-row(center, center);
-
-            //background-color: $gray-3;
-            a {
-                @include font(32px, none, none, black);
-            }
-        }
-
-        .nav-btn-area {
-            @include size(50%, 100%);
-            @include flex-row(space-between, center);
-
-            // background-color: $gray-4;
-            .nav-btn-style {
-                @include size(119px, 37px);
-                @include flex-row(center, center);
-                list-style: none;
-
-                //background-color: $gray-2;
-                a {
-                    @include font(24px, none, none, black);
-                }
-            }
-        }
-
-        .social-media-area {
-            @include size(10%, 100%);
-            @include flex-row(center, center);
-
-            //background-color: $gray-2;
-            .social-style {
-                @include size(50px, 50px);
-                @include flex-row(center, center);
-                margin-right: 20px;
-                color: black;
-
-                //background-color: $gray-3;
-                i {
-                    font-size: 32px;
-                }
+            .news-card-style {
+                @include size(45%, 100%);
+                background-color: $gray-3;
             }
         }
     }
 }
-
-//--control header
-.nav-change {
-    height: 80px;
-
-}
-
-//--End of control header
