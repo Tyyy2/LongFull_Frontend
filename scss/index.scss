@@ -113,11 +113,26 @@ main {
 
                 .card-info-area {
                     @include size(calc(100% - 202px), 177px);
-                    // @include flex-col(, );
+                    @include flex-col(start, space-between);
                     background-color: $gray-2;
-                    .card-title{}
-                    .card-content{}
-                    .card-btn{}
+
+                    .card-title {
+                        @include size(114px, 37px);
+                        background-color: $gray-1;
+                        margin-bottom: 10px;
+                    }
+
+                    .card-content {
+                        @include size(317px, 75px);
+                        background-color: $gray-1;
+                        margin-bottom: 40px;
+                    }
+
+                    .card-btn {
+                        @include size(86px, 19px);
+                        background-color: $gray-1;
+
+                    }
                 }
             }
         }

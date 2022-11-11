@@ -72,5 +72,26 @@ main .news-area .news-card-area .news-card .card-img {
 main .news-area .news-card-area .news-card .card-info-area {
   width: calc(100% - 202px);
   height: 177px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
   background-color: rgb(180, 180, 180);
+}
+main .news-area .news-card-area .news-card .card-info-area .card-title {
+  width: 114px;
+  height: 37px;
+  background-color: rgb(230, 230, 230);
+  margin-bottom: 10px;
+}
+main .news-area .news-card-area .news-card .card-info-area .card-content {
+  width: 317px;
+  height: 75px;
+  background-color: rgb(230, 230, 230);
+  margin-bottom: 40px;
+}
+main .news-area .news-card-area .news-card .card-info-area .card-btn {
+  width: 86px;
+  height: 19px;
+  background-color: rgb(230, 230, 230);
 }/*# sourceMappingURL=index.css.map */
