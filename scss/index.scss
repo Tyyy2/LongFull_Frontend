@@ -97,12 +97,31 @@ main {
 
         .news-card-area {
             @include size(100%, 200px);
-            background-color: $gray-2;
+            @include flex-row(space-between, center);
+            // background-color: $gray-2;
 
-            .news-card-style {
+            .news-card {
                 @include size(45%, 100%);
+                @include flex-row(space-between, center);
                 background-color: $gray-3;
+
+                .card-img {
+                    @include size(202px, 177px);
+                    background-color: $gray-2;
+                    margin-right: 20px;
+                }
+
+                .card-info-area {
+                    @include size(calc(100% - 202px), 177px);
+                    // @include flex-col(, );
+                    background-color: $gray-2;
+                    .card-title{}
+                    .card-content{}
+                    .card-btn{}
+                }
             }
         }
+
+        .news-detail-area {}
     }
 }
