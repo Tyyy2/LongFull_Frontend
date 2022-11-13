@@ -76,9 +76,11 @@ header {
         }
 
         .logo-container {
+            @include flex-row(space-around, center);
+
             .logo {
                 @include size(81px, 100px);
-                background-color: $gray-3;
+                // background-color: $gray-3;
 
                 .logo-img {
                     @include size(100%, 100%);
@@ -91,18 +93,18 @@ header {
                 @include size(193px, 57px);
                 @include flex-row(center, center);
 
-                background-color: $gray-3;
+                // background-color: $gray-3;
 
                 a {
                     @include font(32px, none, none, black);
-              
+
                 }
             }
         }
 
 
 
-        .nav-btn-area {
+        .nav-btn-list {
             @include size(50%, 100%);
             @include flex-row(space-between, center);
 

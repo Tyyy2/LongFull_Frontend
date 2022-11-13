@@ -22,10 +22,14 @@ header .nav-bar {
 header .nav-bar a {
   text-decoration: none;
 }
+header .nav-bar .logo-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 header .nav-bar .logo-container .logo {
   width: 81px;
   height: 100px;
-  background-color: rgb(130, 130, 130);
 }
 header .nav-bar .logo-container .logo .logo-img {
   width: 100%;
@@ -38,7 +42,6 @@ header .nav-bar .logo-container .price-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(130, 130, 130);
 }
 header .nav-bar .logo-container .price-btn a {
   font-size: 32px;
@@ -46,7 +49,7 @@ header .nav-bar .logo-container .price-btn a {
   font-family: none;
   color: black;
 }
-header .nav-bar .nav-btn-area {
+header .nav-bar .nav-btn-list {
   width: 50%;
   height: 100%;
   display: flex;
@@ -54,7 +57,7 @@ header .nav-bar .nav-btn-area {
   align-items: center;
   background-color: rgb(100, 100, 100);
 }
-header .nav-bar .nav-btn-area .nav-btn-style {
+header .nav-bar .nav-btn-list .nav-btn-style {
   width: 119px;
   height: 37px;
   display: flex;
@@ -63,7 +66,7 @@ header .nav-bar .nav-btn-area .nav-btn-style {
   list-style: none;
   background-color: rgb(180, 180, 180);
 }
-header .nav-bar .nav-btn-area .nav-btn-style a {
+header .nav-bar .nav-btn-list .nav-btn-style a {
   font-size: 24px;
   font-weight: none;
   font-family: none;
