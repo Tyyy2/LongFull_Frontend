@@ -67,8 +67,8 @@ header {
 
     .nav-bar {
         @include size(100%, 100%);
-        @include flex-row(space-around, center);
-        padding: 0 5%;
+        @include flex-row(space-between, center);
+        padding: 0 10%;
         background-color: $gray-2;
 
         a {
@@ -107,10 +107,10 @@ header {
         .nav-btn-list {
             @include size(50%, 100%);
             @include flex-row(space-between, center);
-
+            margin-left: 10%;
             background-color: $gray-4;
 
-            .nav-btn-style {
+            .nav-btn {
                 @include size(119px, 37px);
                 @include flex-row(center, center);
                 list-style: none;
