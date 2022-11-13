@@ -4,7 +4,15 @@ $gray-2: rgb(180, 180, 180);
 $gray-3: rgb(130, 130, 130);
 $gray-4: rgb(100, 100, 100);
 $gray-5: rgb(80, 80, 80);
-
+$blue:#00468E;
+$brown:#D59F00;
+$green:#016436;
+$deep_blue:#002448;
+$deep_brown:#634A00;
+$deep_green:#00391F;
+$light_blue:#6FB6FF;
+$light_brown:#FDE6A1;
+$light_green:#9CCFB8;
 @mixin size($w, $h) {
     width: $w;
     height: $h;

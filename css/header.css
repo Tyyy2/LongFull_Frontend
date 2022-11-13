@@ -66,7 +66,6 @@ header .nav-bar .nav-btn-list .nav-btn {
   align-items: center;
   list-style: none;
   position: relative;
-  background-color: rgb(230, 230, 230);
 }
 header .nav-bar .nav-btn-list .nav-btn a {
   font-size: 24px;
@@ -81,6 +80,7 @@ header .nav-bar .nav-btn-list .nav-btn ul {
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  display: none;
 }
 header .nav-bar .nav-btn-list .nav-btn ul li {
   list-style: none;
@@ -89,11 +89,21 @@ header .nav-bar .nav-btn-list .nav-btn ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateY(100%);
+  background-color: #9CCFB8;
+}
+header .nav-bar .nav-btn-list .nav-btn ul li a {
   font-size: 24px;
   font-weight: 400;
   font-family: none;
-  color: white;
-  transform: translateY(100%);
+  color: #00391F;
+}
+header .nav-bar .nav-btn-list .nav-btn ul li:hover {
+  transition-duration: 0.7s;
+  background-color: white;
+}
+header .nav-bar .nav-btn-list .nav-btn:hover ul {
+  display: block;
 }
 header .nav-bar .social-media-area {
   width: 10%;
