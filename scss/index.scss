@@ -4,15 +4,16 @@ $gray-2: rgb(180, 180, 180);
 $gray-3: rgb(130, 130, 130);
 $gray-4: rgb(100, 100, 100);
 $gray-5: rgb(80, 80, 80);
-$blue:#00468E;
-$brown:#D59F00;
-$green:#016436;
-$deep_blue:#002448;
-$deep_brown:#634A00;
-$deep_green:#00391F;
-$light_blue:#6FB6FF;
-$light_brown:#FDE6A1;
-$light_green:#9CCFB8;
+$blue: #00468E;
+$brown: #D59F00;
+$green: #016436;
+$deep_blue: #002448;
+$deep_brown: #634A00;
+$deep_green: #00391F;
+$light_blue: #6FB6FF;
+$light_brown: #FDE6A1;
+$light_green: #9CCFB8;
+
 @mixin size($w, $h) {
     width: $w;
     height: $h;
@@ -71,12 +72,21 @@ $light_green:#9CCFB8;
 
 main {
     @include size(100%, auto);
- 
+
 
     .banner {
         @include size(100%, 969px);
-        background-image: url('../img/LF_LOGO_W.png');
+        background-image: url('../img/banner4.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         position: relative;
+
+        img {
+            @include size(312px, 381px);
+            @include position-center();
+
+        }
     }
 
     .news-area {
@@ -91,7 +101,7 @@ main {
             @include flex-row(center, center);
             @include font(24px, none, none, black);
 
-            background-color: $gray-1;
+            // background-color: $gray-1;
         }
 
         .news-card-area {
@@ -136,6 +146,16 @@ main {
             }
         }
 
-        .news-detail-area {}
+        .news-detail-area {
+            @include size(100%, 50%);
+            @include flex-col(start, space-between);
+            margin-top: 50px;
+            background-color: $gray-2;
+
+            .news-detail {
+                @include size(100%, 15%);
+                background-color: black;
+            }
+        }
     }
 }
