@@ -65,12 +65,35 @@ header .nav-bar .nav-btn-list .nav-btn {
   justify-content: center;
   align-items: center;
   list-style: none;
+  position: relative;
+  background-color: rgb(230, 230, 230);
 }
 header .nav-bar .nav-btn-list .nav-btn a {
   font-size: 24px;
   font-weight: none;
   font-family: none;
   color: white;
+}
+header .nav-bar .nav-btn-list .nav-btn ul {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+header .nav-bar .nav-btn-list .nav-btn ul li {
+  list-style: none;
+  width: 119px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: none;
+  color: white;
+  transform: translateY(100%);
 }
 header .nav-bar .social-media-area {
   width: 10%;

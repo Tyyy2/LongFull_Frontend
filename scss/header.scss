@@ -4,7 +4,15 @@ $gray-2: rgb(180, 180, 180);
 $gray-3: rgb(130, 130, 130);
 $gray-4: rgb(100, 100, 100);
 $gray-5: rgb(80, 80, 80);
-
+$blue:#00468E;
+$brown:#D59F00;
+$green:#016436;
+$deep_blue:#002448;
+$deep_brown:#634A00;
+$deep_green:#00391F;
+$light_blue:#6FB6FF;
+$light_brown:#FDE6A1;
+$light_green:#9CCFB8;
 @mixin size($w, $h) {
     width: $w;
     height: $h;
@@ -69,7 +77,7 @@ header {
         @include size(100%, 100%);
         @include flex-row(space-between, center);
         padding: 0 10%;
-        background-color: #00391F;
+        background-color: $deep_green;
 
         a {
             text-decoration: none;
@@ -85,7 +93,7 @@ header {
                 .logo-img {
                     @include size(100%, 100%);
                     object-fit: fill;
-                    filter:drop-shadow(0px 5px 15px #fff);
+                    filter: drop-shadow(0px 5px 15px #fff);
                 }
             }
 
@@ -114,11 +122,26 @@ header {
                 @include size(119px, 37px);
                 @include flex-row(center, center);
                 list-style: none;
-
-                // background-color: $gray-1;
+                position: relative;
+                background-color: $gray-1;
 
                 a {
                     @include font(24px, none, none, white);
+                }
+
+                ul {
+                    position: absolute;
+                    top: 0;
+                    @include flex-col(start, center);
+
+                    li {
+                        list-style: none;
+                        @include size(119px, 37px);
+                        @include flex-row(center, center);
+                        @include font(24px, 400, none, white);
+                        transform: translateY(100%);
+                        // background-color: $gray-1;
+                    }
                 }
             }
         }
