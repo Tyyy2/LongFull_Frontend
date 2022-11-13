@@ -75,16 +75,8 @@ main {
 
     .banner {
         @include size(100%, 969px);
-        background-color: $gray-1;
+        background-image: url('../img/LF_LOGO_W.png');
         position: relative;
-
-        .slogan {
-            @include size(392px, 48px);
-            background-color: $gray-2;
-            position: absolute;
-            left: 232px;
-            top: 427px;
-        }
     }
 
     .news-area {

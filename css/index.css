@@ -11,16 +11,8 @@ main {
 main .banner {
   width: 100%;
   height: 969px;
-  background-color: rgb(230, 230, 230);
+  background-image: url("../img/LF_LOGO_W.png");
   position: relative;
-}
-main .banner .slogan {
-  width: 392px;
-  height: 48px;
-  background-color: rgb(180, 180, 180);
-  position: absolute;
-  left: 232px;
-  top: 427px;
 }
 main .news-area {
   width: 100%;
