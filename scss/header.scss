@@ -69,7 +69,7 @@ header {
         @include size(100%, 100%);
         @include flex-row(space-between, center);
         padding: 0 10%;
-        background-color: $gray-2;
+        background-color: #00391F;
 
         a {
             text-decoration: none;
@@ -85,7 +85,7 @@ header {
                 .logo-img {
                     @include size(100%, 100%);
                     object-fit: fill;
-
+                    filter:drop-shadow(0px 5px 15px #fff);
                 }
             }
 
@@ -96,7 +96,7 @@ header {
                 // background-color: $gray-3;
 
                 a {
-                    @include font(32px, none, none, black);
+                    @include font(32px, none, none, white);
 
                 }
             }
@@ -108,17 +108,17 @@ header {
             @include size(50%, 100%);
             @include flex-row(space-between, center);
             margin-left: 10%;
-            background-color: $gray-4;
+            // background-color: $gray-4;
 
             .nav-btn {
                 @include size(119px, 37px);
                 @include flex-row(center, center);
                 list-style: none;
 
-                background-color: $gray-2;
+                // background-color: $gray-1;
 
                 a {
-                    @include font(24px, none, none, black);
+                    @include font(24px, none, none, white);
                 }
             }
         }
@@ -126,20 +126,11 @@ header {
         .social-media-area {
             @include size(10%, 100%);
             @include flex-row(center, center);
+            @include flex-row(space-between, center);
+            // background-color: $gray-1;
 
-            background-color: $gray-2;
-
-            .social-style {
-                @include size(50px, 50px);
-                @include flex-row(center, center);
-                margin-right: 20px;
-                color: black;
-
-                background-color: $gray-3;
-
-                i {
-                    font-size: 32px;
-                }
+            .icon-style {
+                @include font(44px, none, none, white);
             }
         }
     }
