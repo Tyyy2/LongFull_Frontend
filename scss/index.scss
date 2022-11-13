@@ -68,11 +68,10 @@ $light_green:#9CCFB8;
     box-sizing: border-box;
 }
 
+
 main {
-    @include size(100%, 3788px);
-    position: absolute;
-    top: -130px;
-    z-index: 1;
+    @include size(100%, auto);
+ 
 
     .banner {
         @include size(100%, 969px);

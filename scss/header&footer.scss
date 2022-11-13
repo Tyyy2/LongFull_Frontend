@@ -176,10 +176,28 @@ header {
     }
 }
 
-//--control header
-.nav-change {
-    height: 80px;
 
+footer {
+    @include size(100%, 421px);
+    @include flex-row(space-between, center);
+    background-color: $light_green;
+    padding: 0 15%;
+    position: relative;
+
+    .footer-logo {
+        display: block;
+        @include size(157px, 191px);
+        object-fit: contain;
+
+        .logo-img {
+            @include size(100%, 100%);
+            border: 1px solid black;
+
+        }
+    }
+
+    .footer-info {
+        @include size(40%,100%);
+        background-color: $gray-1;
+    }
 }
-
-//--End of control header
