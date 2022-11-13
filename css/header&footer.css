@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Arial";
 }
 
 header {
@@ -47,7 +48,7 @@ header .nav-bar .logo-container .price-btn {
 header .nav-bar .logo-container .price-btn a {
   font-size: 32px;
   font-weight: none;
-  font-family: none;
+  font-family: "Arial";
   color: white;
 }
 header .nav-bar .nav-btn-list {
@@ -70,7 +71,7 @@ header .nav-bar .nav-btn-list .nav-btn {
 header .nav-bar .nav-btn-list .nav-btn a {
   font-size: 24px;
   font-weight: none;
-  font-family: none;
+  font-family: "Arial";
   color: white;
 }
 header .nav-bar .nav-btn-list .nav-btn ul {
@@ -95,7 +96,7 @@ header .nav-bar .nav-btn-list .nav-btn ul li {
 header .nav-bar .nav-btn-list .nav-btn ul li a {
   font-size: 24px;
   font-weight: 400;
-  font-family: none;
+  font-family: "Arial";
   color: #00391F;
 }
 header .nav-bar .nav-btn-list .nav-btn ul li:hover {
@@ -154,7 +155,7 @@ footer .footer-info {
 footer .footer-info .information {
   font-size: 20px;
   font-weight: 400;
-  font-family: none;
+  font-family: "Arial";
   color: black;
   letter-spacing: 2px;
 }
@@ -198,7 +199,7 @@ footer .copy-right {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 footer .copy-right span a {
   color: black;

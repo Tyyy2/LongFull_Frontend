@@ -67,6 +67,7 @@ $light_green: #9CCFB8;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Arial';
 }
 
 header {
@@ -105,7 +106,7 @@ header {
                 // background-color: $gray-3;
 
                 a {
-                    @include font(32px, none, none, white);
+                    @include font(32px, none, 'Arial', white);
 
                 }
             }
@@ -127,7 +128,7 @@ header {
                 // background-color: $gray-1;
 
                 a {
-                    @include font(24px, none, none, white);
+                    @include font(24px, none, 'Arial', white);
                 }
 
 
@@ -145,7 +146,7 @@ header {
                         background-color: $light_green;
 
                         a {
-                            @include font(24px, 400, none, $deep_green);
+                            @include font(24px, 400, 'Arial', $deep_green);
                         }
 
                         &:hover {
@@ -203,7 +204,7 @@ footer {
 
 
         .information {
-            @include font(20px, 400, none, black);
+            @include font(20px, 400, 'Arial', black);
             letter-spacing: 2px;
 
             li {
@@ -212,7 +213,7 @@ footer {
         }
 
         .business-hours {
-            @include font(20px, 400, none, black);
+            @include font(20px, 400,none, black);
             letter-spacing: 2px;
 
             li {
@@ -246,11 +247,12 @@ footer {
         position: absolute;
         bottom: 0;
         left: 50%;
-        transform: translateX(-50%);
-        span{
-           a{
-            color: black;
-           }
+        transform: translate(-50%,-50%);
+
+        span {
+            a {
+                color: black;
+            }
         }
     }
 }
