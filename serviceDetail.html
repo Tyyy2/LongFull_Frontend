@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/header&footer.css">
+    <link rel="stylesheet" href="./css/serviceDetail.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
 </head>
 
@@ -62,6 +64,33 @@
         </div>
     </header>
 
+    <main>
+        <div class="service-btns">
+            <button>執照證照</button>
+            <button>公益實績</button>
+            <button>其他</button>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/Logo.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/Logo.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/Logo.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/Logo.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/Logo.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/Logo.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/Logo.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/Logo.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/Logo.png" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <article class="service-swiper-content">
+            <h2>證照執照</h2>
+            <p>顧客不怕電影女士辛苦大聲，關注當然核心一旦為何，提高先進我都禮品格式人體開展本人宜蘭排行百姓，衝擊做好並不，配合防治萬元轉變，有什麼會有一台，二級看了權威為此上下美麗身體想起不得停止，行業自由說著整合重點上帝進一步網絡圖文付出你沒有遊客，父母表達報價，證。</p>
+        </article>
+    </main>
 
     <footer>
         <a class="footer-logo" href="/">
@@ -98,6 +127,23 @@
         <div class="copy-right">CopyRight&copy;榮輔企業股份有限公司&nbsp;<span><a href="https://www.moi.gov.tw/cp.aspx?n=10953"
                     target="_blank"> 隱私權政策</a></span></div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+    </script>
 </body>
 
 </html>

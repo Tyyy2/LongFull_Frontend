@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+main {
+  width: 100%;
+  height: 500px;
+  padding: 53px 23.64% 102px 17.6%;
+}
+main form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+main form h2 {
+  width: 7.71vw;
+  height: 37px;
+  border-bottom: 2px solid black;
+}
+main form .contact-input-info {
+  width: 19.27vw;
+  margin-left: 6.61vw;
+}
+main form .contact-input-info label[for*=e] {
+  width: 3.75vw;
+  height: 35px;
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+  background-color: #D59F00;
+  color: #00468E;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+main form .contact-input-info input[type=text] {
+  width: calc(100% - 3.75vw);
+  height: 35px;
+  border: #D59F00 solid 1px;
+}
+main form .contact-input-info p {
+  margin-top: 63px;
+  background-color: #00468E;
+  color: white;
+  height: 38px;
+  width: 5.99vw;
+  font-size: 20px;
+  line-height: 38px;
+}
+main form .contact-input-info label[for*=common] {
+  height: 35px;
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+  background-color: #D59F00;
+  color: #00468E;
+  font-size: 20px;
+  margin-top: 26px;
+}
+main form .contact-input-info input[type=checkbox] {
+  display: inline-block;
+  height: 1.1vw;
+  width: 1.1vw;
+  border: #D59F00 1px solid;
+}
+main form .contact-input-context {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3.75vw;
+  width: 19.27vw;
+  height: 345px;
+}
+main form .contact-input-context label {
+  height: 38px;
+  background-color: #00468E;
+  font-size: 20px;
+  color: white;
+  line-height: 38px;
+}
+main form .contact-input-context textarea {
+  height: calc(100% - 38px);
+  border: #D59F00 1px solid;
+}
+main form > input {
+  position: absolute;
+  font-size: 24px;
+  left: 75.47vw;
+  top: 564px;
+  transform: translate(0, -100%);
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+}/*# sourceMappingURL=contactUs.css.map */
