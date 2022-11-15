@@ -91,21 +91,32 @@ main {
 
     #bulletin-board {
         @include size(100%, 742px);
+        padding: 70px 120px;
 
-        .news-area {
-            @include size(100%, 100%);
-            @include flex-col(start, space-around);
-            padding: 70px 120px;
-            background-color: white;
-            border: 1px black solid;
-
+        .bulletin-title {
+            @include flex-row(start,space-between );
             .news-title {
                 @include size(130px, 45px);
-                @include flex-row(start, center);
                 @include font(24px, none, none, black);
 
                 // background-color: $gray-1;
             }
+
+            .employ-title {
+                @include size(130px, 45px);
+                @include font(24px, none, none, black);
+                margin-left: 50px;
+            }
+        }
+
+
+        .news-area {
+            // display: none !important;
+            @include size(100%, 100%);
+            @include flex-col(start, space-around);
+            background-color: white;
+
+
 
             .news-card-area {
                 @include size(100%, 200px);
@@ -129,19 +140,19 @@ main {
                         background-color: $gray-2;
 
                         .card-title {
-                            @include size(114px, 37px);
+                            @include size(30%, 37px);
                             background-color: $gray-1;
                             margin-bottom: 10px;
                         }
 
                         .card-content {
-                            @include size(317px, 75px);
+                            @include size(90%, 75px);
                             background-color: $gray-1;
                             margin-bottom: 40px;
                         }
 
                         .card-btn {
-                            @include size(86px, 19px);
+                            @include size(15%, 19px);
                             background-color: $gray-1;
 
                         }
@@ -182,6 +193,12 @@ main {
 
                 }
             }
+        }
+
+        .employ-area {
+            @include size(100%, 100%);
+            background-color: $gray-3;
+            display: none;
         }
     }
 
@@ -276,7 +293,7 @@ main {
             }
         }
 
-        .question-board {
+        #question-board {
             @include size(100%, 35%);
             // background-color: $gray-1;
             padding: 0 10%;
