@@ -25,9 +25,13 @@ main .banner img {
   left: 50%;
   translate: -50% -50%;
 }
-main .news-area {
+main #bulletin-board {
   width: 100%;
   height: 742px;
+}
+main #bulletin-board .news-area {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -36,25 +40,25 @@ main .news-area {
   background-color: white;
   border: 1px black solid;
 }
-main .news-area .news-title {
+main #bulletin-board .news-area .news-title {
   width: 130px;
   height: 45px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   font-size: 24px;
   font-weight: none;
   font-family: none;
   color: black;
 }
-main .news-area .news-card-area {
+main #bulletin-board .news-area .news-card-area {
   width: 100%;
   height: 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-main .news-area .news-card-area .news-card {
+main #bulletin-board .news-area .news-card-area .news-card {
   width: 45%;
   height: 100%;
   display: flex;
@@ -62,13 +66,13 @@ main .news-area .news-card-area .news-card {
   align-items: center;
   background-color: rgb(130, 130, 130);
 }
-main .news-area .news-card-area .news-card .card-img {
+main #bulletin-board .news-area .news-card-area .news-card .card-img {
   width: 202px;
   height: 177px;
   background-color: rgb(180, 180, 180);
   margin-right: 20px;
 }
-main .news-area .news-card-area .news-card .card-info-area {
+main #bulletin-board .news-area .news-card-area .news-card .card-info-area {
   width: calc(100% - 202px);
   height: 177px;
   display: flex;
@@ -77,24 +81,24 @@ main .news-area .news-card-area .news-card .card-info-area {
   align-items: start;
   background-color: rgb(180, 180, 180);
 }
-main .news-area .news-card-area .news-card .card-info-area .card-title {
+main #bulletin-board .news-area .news-card-area .news-card .card-info-area .card-title {
   width: 114px;
   height: 37px;
   background-color: rgb(230, 230, 230);
   margin-bottom: 10px;
 }
-main .news-area .news-card-area .news-card .card-info-area .card-content {
+main #bulletin-board .news-area .news-card-area .news-card .card-info-area .card-content {
   width: 317px;
   height: 75px;
   background-color: rgb(230, 230, 230);
   margin-bottom: 40px;
 }
-main .news-area .news-card-area .news-card .card-info-area .card-btn {
+main #bulletin-board .news-area .news-card-area .news-card .card-info-area .card-btn {
   width: 86px;
   height: 19px;
   background-color: rgb(230, 230, 230);
 }
-main .news-area .news-detail-area {
+main #bulletin-board .news-area .news-detail-area {
   width: 100%;
   height: 50%;
   display: flex;
@@ -102,10 +106,163 @@ main .news-area .news-detail-area {
   justify-content: space-between;
   align-items: start;
   margin-top: 50px;
-  background-color: rgb(180, 180, 180);
 }
-main .news-area .news-detail-area .news-detail {
+main #bulletin-board .news-area .news-detail-area .news-detail {
   width: 100%;
   height: 15%;
-  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(180, 180, 180);
+}
+main #bulletin-board .news-area .news-detail-area .news-detail .news-detail-date {
+  width: 100px;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(230, 230, 230);
+}
+main #bulletin-board .news-area .news-detail-area .news-detail .news-detail-content {
+  width: 70%;
+  height: 80%;
+  background-color: rgb(230, 230, 230);
+}
+main #bulletin-board .news-area .news-detail-area .news-detail .news-detail-button {
+  width: 100px;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(230, 230, 230);
+  text-decoration: none;
+}
+main .banner2 {
+  width: 100%;
+  height: 594px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(180, 180, 180);
+}
+main .banner2 img {
+  width: 174px;
+  height: 187px;
+  background-color: rgb(230, 230, 230);
+  margin-bottom: 50px;
+}
+main .banner2 .slogan {
+  width: 555px;
+  height: 41px;
+  background-color: rgb(230, 230, 230);
+}
+main .introduction-area {
+  width: 100%;
+  height: 1300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+main .introduction-area .service-series {
+  width: 100%;
+  height: 35%;
+  padding: 0 10%;
+}
+main .introduction-area .service-series .service-title {
+  width: 150px;
+  height: 50px;
+  background-color: rgb(180, 180, 180);
+  margin-top: 20px;
+}
+main .introduction-area .service-series .service-showcase {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 5%;
+}
+main .introduction-area .service-series .service-showcase .service-item {
+  width: 338px;
+  height: 92px;
+  background-color: #D59F00;
+  margin: 10px;
+  border-radius: 40px;
+}
+main .introduction-area .work-sop {
+  width: 100%;
+  height: 20%;
+  padding: 0 10%;
+}
+main .introduction-area .work-sop .work-title {
+  width: 150px;
+  height: 50px;
+  background-color: rgb(230, 230, 230);
+}
+main .introduction-area .work-sop .work-card-showcase {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(180, 180, 180);
+  font-size: 24px;
+}
+main .introduction-area .work-sop .work-card-showcase .work-card {
+  width: 15%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(230, 230, 230);
+}
+main .introduction-area .work-sop .work-card-showcase .work-card .work-icon {
+  width: 100%;
+  height: 70%;
+  background-color: rgb(130, 130, 130);
+}
+main .introduction-area .work-sop .work-card-showcase .work-card .work-name {
+  width: 100%;
+  height: 20%;
+  background-color: rgb(130, 130, 130);
+  font-size: 14px;
+}
+main .introduction-area .question-board {
+  width: 100%;
+  height: 35%;
+  padding: 0 10%;
+}
+main .introduction-area .question-board .question-title {
+  width: 150px;
+  height: 50px;
+  background-color: rgb(180, 180, 180);
+}
+main .introduction-area .question-board .question-showcase {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+main .introduction-area .question-board .question-showcase .question-content {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+main .introduction-area .question-board .question-showcase .question-content .question {
+  width: 100%;
+  height: 40%;
+  background-color: rgb(230, 230, 230);
+}
+main .introduction-area .question-board .question-showcase .question-content .answer {
+  width: 100%;
+  height: 40%;
+  background-color: rgb(230, 230, 230);
 }/*# sourceMappingURL=index.css.map */

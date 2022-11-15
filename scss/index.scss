@@ -89,72 +89,225 @@ main {
         }
     }
 
-    .news-area {
+    #bulletin-board {
         @include size(100%, 742px);
-        @include flex-col(start, space-around);
-        padding: 70px 120px;
-        background-color: white;
-        border: 1px black solid;
 
-        .news-title {
-            @include size(130px, 45px);
-            @include flex-row(center, center);
-            @include font(24px, none, none, black);
+        .news-area {
+            @include size(100%, 100%);
+            @include flex-col(start, space-around);
+            padding: 70px 120px;
+            background-color: white;
+            border: 1px black solid;
 
-            // background-color: $gray-1;
+            .news-title {
+                @include size(130px, 45px);
+                @include flex-row(start, center);
+                @include font(24px, none, none, black);
+
+                // background-color: $gray-1;
+            }
+
+            .news-card-area {
+                @include size(100%, 200px);
+                @include flex-row(space-between, center);
+                // background-color: $gray-2;
+
+                .news-card {
+                    @include size(45%, 100%);
+                    @include flex-row(space-between, center);
+                    background-color: $gray-3;
+
+                    .card-img {
+                        @include size(202px, 177px);
+                        background-color: $gray-2;
+                        margin-right: 20px;
+                    }
+
+                    .card-info-area {
+                        @include size(calc(100% - 202px), 177px);
+                        @include flex-col(start, space-between);
+                        background-color: $gray-2;
+
+                        .card-title {
+                            @include size(114px, 37px);
+                            background-color: $gray-1;
+                            margin-bottom: 10px;
+                        }
+
+                        .card-content {
+                            @include size(317px, 75px);
+                            background-color: $gray-1;
+                            margin-bottom: 40px;
+                        }
+
+                        .card-btn {
+                            @include size(86px, 19px);
+                            background-color: $gray-1;
+
+                        }
+                    }
+                }
+            }
+
+            .news-detail-area {
+                @include size(100%, 50%);
+                @include flex-col(start, space-between);
+                margin-top: 50px;
+                // background-color: $gray-2;
+
+                .news-detail {
+                    @include size(100%, 15%);
+                    @include flex-row(space-between, center);
+                    background-color: $gray-2;
+
+                    .news-detail-date {
+                        @include size(100px, 80%);
+                        display: flex;
+                        align-items: center;
+                        background-color: $gray-1;
+                    }
+
+                    .news-detail-content {
+                        @include size(70%, 80%);
+                        background-color: $gray-1;
+                    }
+
+                    .news-detail-button {
+                        @include size(100px, 80%);
+                        @include flex-row(space-between, center);
+                        background-color: $gray-1;
+                        text-decoration: none;
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    .banner2 {
+        @include size(100%, 594px);
+        @include flex-col(center, center);
+        background-color: $gray-2;
+
+
+        img {
+            @include size(174px, 187px);
+            background-color: $gray-1;
+            margin-bottom: 50px;
+
         }
 
-        .news-card-area {
-            @include size(100%, 200px);
-            @include flex-row(space-between, center);
+        .slogan {
+            @include size(555px, 41px);
+            background-color: $gray-1;
+        }
+    }
+
+    .introduction-area {
+        @include size(100%, 1300px);
+        @include flex-col(start, space-between);
+        // background-color: $gray-3;
+
+        .service-series {
+            @include size(100%, 35%);
+            // background-color: $gray-1;
+            padding: 0 10%;
+
+
+            .service-title {
+                @include size(150px, 50px);
+                background-color: $gray-2;
+                margin-top: 20px;
+
+            }
+
+            .service-showcase {
+                @include size(100%, 80%);
+                display: flex;
+                justify-content: space-between;
+                align-content: space-around;
+                flex-wrap: wrap;
+                padding: 0 5%;
+                // background-color: $gray-2;
+
+
+                .service-item {
+                    @include size(338px, 92px);
+                    background-color: $brown;
+                    margin: 10px;
+                    border-radius: 40px;
+                }
+            }
+        }
+
+        .work-sop {
+            @include size(100%, 20%);
+            padding: 0 10%;
             // background-color: $gray-2;
 
-            .news-card {
-                @include size(45%, 100%);
+            .work-title {
+                @include size(150px, 50px);
+                background-color: $gray-1;
+            }
+
+            .work-card-showcase {
+                @include size(100%, 80%);
                 @include flex-row(space-between, center);
-                background-color: $gray-3;
+                background-color: $gray-2;
+                font-size: 24px;
 
-                .card-img {
-                    @include size(202px, 177px);
-                    background-color: $gray-2;
-                    margin-right: 20px;
-                }
+                .work-card {
+                    @include size(15%, 80%);
+                    @include flex-col(center, space-between);
+                    background-color: $gray-1;
 
-                .card-info-area {
-                    @include size(calc(100% - 202px), 177px);
-                    @include flex-col(start, space-between);
-                    background-color: $gray-2;
-
-                    .card-title {
-                        @include size(114px, 37px);
-                        background-color: $gray-1;
-                        margin-bottom: 10px;
+                    .work-icon {
+                        @include size(100%, 70%);
+                        background-color: $gray-3;
                     }
 
-                    .card-content {
-                        @include size(317px, 75px);
-                        background-color: $gray-1;
-                        margin-bottom: 40px;
-                    }
-
-                    .card-btn {
-                        @include size(86px, 19px);
-                        background-color: $gray-1;
-
+                    .work-name {
+                        @include size(100%, 20%);
+                        background-color: $gray-3;
+                        font-size: 14px;
                     }
                 }
             }
         }
 
-        .news-detail-area {
-            @include size(100%, 50%);
-            @include flex-col(start, space-between);
-            margin-top: 50px;
-            background-color: $gray-2;
+        .question-board {
+            @include size(100%, 35%);
+            // background-color: $gray-1;
+            padding: 0 10%;
 
-            .news-detail {
-                @include size(100%, 15%);
-                background-color: black;
+            .question-title {
+                @include size(150px, 50px);
+                background-color: $gray-2;
+            }
+
+            .question-showcase {
+                @include size(100%, 80%);
+                @include flex-col(start, space-around);
+                // background-color: $gray-2;
+
+                .question-content {
+                    @include size(100%, 25%);
+                    @include flex-col(start, center);
+                    // background-color: $gray-2;
+
+                    .question {
+                        @include size(100%, 40%);
+                        background-color: $gray-1;
+                    }
+
+                    .answer {
+                        @include size(100%, 40%);
+                        background-color: $gray-1;
+
+                    }
+                }
+
             }
         }
     }
