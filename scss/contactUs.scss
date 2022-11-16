@@ -90,17 +90,20 @@ main {
         .contact-input-info {
             width: 19.27vw;
             margin-left: 6.61vw;
+            & :nth-child(5){
+            }
 
             label[for*='e'] {
-                width: 3.75vw;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
                 height: 35px;
-                display: inline-block;
-                text-align: center;
-                line-height: 35px;
                 background-color: $brown;
                 color: $blue;
                 font-size: 20px;
                 margin-bottom: 24px;
+                text-indent: calc(1.875vw - 20px);
             }
 
             input[type='text'] {
@@ -117,49 +120,59 @@ main {
                 width: 5.99vw;
                 font-size: 20px;
                 line-height: 38px;
+                text-align: center;
             }
+
             label[for*='common'] {
                 height: 35px;
-                display: inline-block;
-                text-align: center;
-                line-height: 35px;
+                display: flex;
+                align-items: center;
+                width: 50%;
+                justify-content: space-between;
                 background-color: $brown;
                 color: $blue;
                 font-size: 20px;
-                margin-top: 26px;
-            }
-            input[type="checkbox"]{
-                display: inline-block;
-                height: 1.1vw;
-                width: 1.1vw;
-                border: $brown 1px solid ;
+                margin-top: 20px;
+                span{
+                    flex:1;
+                    text-align: center;
+                }
+
+                input[type="checkbox"] {
+                    height: 35px;
+                    width: 35px;
+                }
             }
         }
-        .contact-input-context{
+
+        .contact-input-context {
             display: flex;
             flex-direction: column;
             margin-left: 3.75vw;
             width: 19.27vw;
             height: 345px;
-            label{
+
+            label {
                 height: 38px;
                 background-color: $blue;
                 font-size: 20px;
                 color: white;
                 line-height: 38px;
+                text-indent:5px;
             }
-            textarea{
+
+            textarea {
                 height: calc(100% - 38px);
                 border: $brown 1px solid;
             }
         }
 
-        &>input{
+        &>input {
             position: absolute;
             font-size: 24px;
             left: 75.47vw;
             top: 564px;
-            transform: translate(0,-100%);
+            transform: translate(0, -100%);
             background-color: unset;
             border: none;
             cursor: pointer;
