@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/header&footer.css">
     <link rel="stylesheet" href="./css/aboutUS.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
 </head>
 
@@ -64,38 +65,79 @@
     </header>
 
     <main>
+
         <div class="photo-showcase">
             <div class="photo-card">
-                <div class="photo-name"></div>
+                <div class="photo-name">證照</div>
                 <div class="photo-img"><img src="" alt=""></div>
             </div>
             <div class="photo-card">
-                <div class="photo-name"></div>
+                <div class="photo-name">執照</div>
                 <div class="photo-img"><img src="" alt=""></div>
             </div>
             <div class="photo-card">
-                <div class="photo-name"></div>
+                <div class="photo-name">設備機具</div>
                 <div class="photo-img"><img src="" alt=""></div>
             </div>
         </div>
         <div class="about-article">
-            <div class="article-title"></div>
-            <div class="article-content"></div>
+            <div class="article-title">關於我們</div>
+            <div class="article-content">內文</div>
         </div>
-        <div class="swiper-area"></div>
+        <div class="swiper-area">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
         <div class="history-area">
-            <div class="history-title">
+            <div class="history-title">創建歷史</div>
+            <div class="history-showcase">
                 <div class="history-content">
-                    <div class="history-date"></div>
-                    <div class="history-text"></div>
+                    <div class="history-date">110.09.09</div>
+                    <div class="history-text">內文內文內文</div>
+                </div>
+                <div class="history-content">
+                    <div class="history-date">110.09.09</div>
+                    <div class="history-text">內文內文內文</div>
+
+                </div>
+                <div class="history-content">
+                    <div class="history-date">110.09.09</div>
+                    <div class="history-text">內文內文內文</div>
+                </div>
+                <div class="history-content">
+                    <div class="history-date">110.09.09</div>
+                    <div class="history-text">內文內文內文</div>
                 </div>
             </div>
+
+
         </div>
 
 
 
 
     </main>
+
+
     <footer>
         <a class="footer-logo" href="/">
             <img class="logo-img" src="./img/Logo.png">
@@ -131,6 +173,27 @@
         <div class="copy-right">CopyRight&copy;榮輔企業股份有限公司&nbsp;<span><a href="https://www.moi.gov.tw/cp.aspx?n=10953"
                     target="_blank"> 隱私權政策</a></span></div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
 </body>
 
 </html>

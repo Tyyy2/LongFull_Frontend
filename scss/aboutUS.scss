@@ -67,16 +67,119 @@ $light_green: #9CCFB8;
 
 main {
     @include size(100%, 2140px);
+    @include flex-col(start, space-between);
 
     .photo-showcase {
         @include size(100%, 25%);
         @include flex-row(space-between, center);
         padding: 0 5%;
-        background-color: $gray-1;
+        // background-color: $gray-1;
 
         .photo-card {
             @include size(25%, 80%);
-            background-color: $gray-2;
+            @include flex-col(center, space-around);
+            // background-color: $gray-2;
+
+            .photo-name {
+                @include size(100%, 20%);
+                @include flex-row(center, center);
+                // background-color: $gray-1;
+            }
+
+            .photo-img {
+                @include size(90%, 70%);
+                background-color: $gray-1;
+
+                img {
+                    @include size(100%, 100%);
+                    object-fit: contain;
+                }
+            }
         }
+    }
+
+    .about-article {
+        @include size(100%, 20%);
+        @include flex-col(start, space-between);
+        // background-color: $gray-2;
+        padding: 0 10%;
+
+        .article-title {
+            @include size(20%, 80px);
+            @include flex-row(start, center);
+            // background-color: $gray-1;
+            font-size: 32px;
+        }
+
+        .article-content {
+            @include size(100%, 80%);
+            display: flex;
+            justify-content: start;
+            background-color: $gray-4;
+        }
+    }
+
+    .swiper-area {
+        @include size(100%, 30%);
+        // background-color: $gray-2;
+
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            width: 500px;
+
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .history-area {
+        @include size(100%, 20%);
+        @include flex-col(start, space-between);
+        // background-color: $gray-2;
+        padding: 0 10%;
+        padding-bottom: 5%;
+
+        .history-title {
+            @include size(20%, 80px);
+            @include flex-row(start, center);
+            // background-color: $gray-1;
+            font-size: 32px;
+        }
+
+        .history-showcase {
+            @include size(100%, 80%);
+            @include flex-col(start, space-between);
+            // background-color: $gray-1;
+
+            .history-content {
+                @include size(100%, 20%);
+                @include flex-row(space-between, center);
+                background-color: $gray-3;
+
+                .history-date {
+                    @include size(15%, 80%);
+                    @include flex-row(start, center);
+                }
+
+                .history-text {
+                    @include size(85%, 80%);
+                    @include flex-row(start, center);
+                    // background-color: $gray-1;
+
+                }
+            }
+        }
+
     }
 }
