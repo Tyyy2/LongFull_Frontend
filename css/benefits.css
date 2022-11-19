@@ -30,24 +30,22 @@ main .benefits-btns button {
   font-size: 24px;
   color: #00468E;
 }
-main .benefits-card {
+main .benefits-btns button.active {
+  background-color: #00468E;
+  color: #D59F00;
+}
+main .benefits-card-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .benefits-card-wrap .benefits-card {
   margin: 0 1.5%;
   width: 30.3%;
 }
-main .benefits-card img {
+main .benefits-card-wrap .benefits-card img {
   width: 100%;
   height: 240px;
   object-fit: cover;
-}
-main .benefits-card .benefits-text {
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-main .benefits-card .benefits-text :nth-child(1) {
-  font-size: 24px;
-}
-main .benefits-card .benefits-text :nth-child(2) {
-  font-size: 20px;
 }/*# sourceMappingURL=benefits.css.map */

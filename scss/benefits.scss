@@ -94,29 +94,26 @@ main {
             border: none;
             font-size: 24px;
             color: $blue;
+            &.active {
+                background-color: $blue;
+                color: $brown;
+            }
         }
     }
 
-    .benefits-card {
-        margin: 0 1.5%;
-        width: 30.3%;
+    .benefits-card-wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .benefits-card {
+            margin: 0 1.5%;
+            width: 30.3%;
 
-        img {
-            width: 100%;
-            height: 240px;
-            object-fit: cover;
-        }
-
-        .benefits-text {
-            margin-top: 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            & :nth-child(1){
-                font-size: 24px;
-            }
-            & :nth-child(2){
-                font-size: 20px;
+            img {
+                width: 100%;
+                height: 240px;
+                object-fit: cover;
             }
         }
     }
