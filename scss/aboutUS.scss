@@ -194,14 +194,39 @@ main {
     .client-area {
         @include size(100%, 20%);
         @include flex-col(center, space-between);
-        background-color: $gray-2;
+        // background-color: $gray-2;
 
         .client-title {
             @include size(50%, 10%);
             @include font(32px, 400, 'Arial', black);
             @include flex-row(center, center);
             text-decoration: underline;
-            background-color: $gray-1;
+            // background-color: $gray-1;
+        }
+
+        .client-showcase {
+            @include size(100%, 80%);
+            @include flex-row(space-between, center);
+            padding: 0 5%;
+            // background-color: $gray-3;
+
+            .client-card {
+                @include size(15%, 90%);
+                @include flex-col(center, space-between);
+
+                img {
+                    @include size(100%, 80%);
+                    object-fit: cover;
+                }
+
+                .client-name {
+                    @include size(100%, 10%);
+                    @include flex-row(center, center);
+                    @include font(20px, 400, 'Arial', black);
+                }
+            }
+
+       
         }
     }
 }

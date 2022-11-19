@@ -160,14 +160,13 @@ main #bulletin-board .news-area .news-detail-area .news-detail .news-detail-butt
 main #bulletin-board .employ-area {
   width: 100%;
   height: auto;
-  padding: 5% 0;
+  padding: 0 10%;
+  padding-bottom: 5%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-around;
-  background-color: rgb(230, 230, 230);
-  display: none !important;
 }
 main #bulletin-board .employ-area .employ-card {
   width: 45%;
@@ -191,7 +190,7 @@ main #bulletin-board .employ-area .employ-card .card-info-area {
   align-items: start;
 }
 main #bulletin-board .employ-area .employ-card .card-info-area .card-title {
-  width: 30%;
+  width: 40%;
   height: 37px;
   font-size: 24px;
   font-weight: 400;
@@ -209,7 +208,7 @@ main #bulletin-board .employ-area .employ-card .card-info-area .card-content {
   margin-bottom: 40px;
 }
 main #bulletin-board .employ-area .employ-card .card-info-area a {
-  width: 20%;
+  width: 30%;
   height: 19px;
   font-size: 14px;
   font-weight: 400;
@@ -400,4 +399,8 @@ main .introduction-area #question-board .question-showcase .question-content .an
   font-weight: 400;
   font-family: "Arial";
   color: black;
+}
+
+.area_none {
+  display: none !important;
 }/*# sourceMappingURL=index.css.map */
