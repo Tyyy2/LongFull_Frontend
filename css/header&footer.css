@@ -50,6 +50,9 @@ header .nav-bar .logo-container .price-btn a {
   font-weight: none;
   font-family: "Arial";
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header .nav-bar .nav-btn-list {
   width: 50%;
@@ -116,11 +119,18 @@ header .nav-bar .social-media-area {
   justify-content: space-between;
   align-items: center;
 }
-header .nav-bar .social-media-area .icon-style {
-  font-size: 44px;
-  font-weight: none;
-  font-family: none;
-  color: white;
+header .nav-bar .social-media-area a {
+  width: 50px;
+  height: 50px;
+}
+header .nav-bar .social-media-area a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+header .nav-bar .social-media-area :nth-child(2) img {
+  width: 90%;
+  height: 100%;
 }
 
 footer {
@@ -173,17 +183,24 @@ footer .footer-info .business-hours li {
   list-style: none;
 }
 footer .footer-info .footer-social-media-area {
-  width: 25%;
+  width: 30%;
   height: 20%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-footer .footer-info .footer-social-media-area .footer-icon-style {
-  font-size: 44px;
-  font-weight: none;
-  font-family: none;
-  color: black;
+footer .footer-info .footer-social-media-area a {
+  width: 50px;
+  height: 50px;
+}
+footer .footer-info .footer-social-media-area a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+footer .footer-info .footer-social-media-area :nth-child(2) img {
+  width: 100%;
+  height: 100%;
 }
 footer .google-map {
   width: 40%;
