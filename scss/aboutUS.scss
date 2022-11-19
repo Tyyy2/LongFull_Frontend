@@ -66,120 +66,142 @@ $light_green: #9CCFB8;
 
 
 main {
-    @include size(100%, 2140px);
-    @include flex-col(start, space-between);
+    @include size(100%, 1844px);
 
-    .photo-showcase {
-        @include size(100%, 25%);
-        @include flex-row(space-between, center);
-        padding: 0 5%;
-        // background-color: $gray-1;
-
-        .photo-card {
-            @include size(25%, 80%);
-            @include flex-col(center, space-around);
-            // background-color: $gray-2;
-
-            .photo-name {
-                @include size(100%, 20%);
-                @include flex-row(center, center);
-                // background-color: $gray-1;
-            }
-
-            .photo-img {
-                @include size(90%, 70%);
-                background-color: $gray-1;
-
-                img {
-                    @include size(100%, 100%);
-                    object-fit: contain;
-                }
-            }
-        }
-    }
-
-    .about-article {
-        @include size(100%, 20%);
-        @include flex-col(start, space-between);
-        // background-color: $gray-2;
-        padding: 0 10%;
-
-        .article-title {
-            @include size(20%, 80px);
-            @include flex-row(start, center);
-            // background-color: $gray-1;
-            font-size: 32px;
-        }
-
-        .article-content {
-            @include size(100%, 80%);
-            display: flex;
-            justify-content: start;
-            background-color: $gray-4;
-        }
-    }
-
-    .swiper-area {
-        @include size(100%, 30%);
+    .slogan-area {
+        @include size(100%, 10%);
+        @include flex-row(center, center);
         // background-color: $gray-2;
 
-        .swiper {
-            width: 100%;
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
+        .slogan-content {
+            @include size(60%, 50%);
+            @include flex-row(space-between, center);
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
 
-        .swiper-slide {
-            width: 500px;
 
-            background-position: center;
-            background-size: cover;
+            .slogan-text {
+                @include font(36px, 400, 'Arial', black);
+            }
 
-        }
+            :nth-child(1) {
+                transform: translateX(-10%);
+            }
 
-        .swiper-slide img {
-            display: block;
-            width: 100%;
+            :nth-child(2) {
+                transform: translateX(-5%);
+            }
+
+            :nth-child(3) {
+                transform: translateX(5%);
+            }
+
+            :nth-child(4) {
+                transform: translateX(10%);
+            }
         }
     }
 
     .history-area {
-        @include size(100%, 20%);
-        @include flex-col(start, space-between);
+        @include size(100%, 35%);
+        @include flex-col(center, space-between);
+
         // background-color: $gray-2;
-        padding: 0 10%;
-        padding-bottom: 5%;
 
         .history-title {
-            @include size(20%, 80px);
-            @include flex-row(start, center);
+            @include size(20%, 10%);
+            @include font(32px, 400, 'Arial', black);
+            @include flex-row(center, center);
             // background-color: $gray-1;
-            font-size: 32px;
         }
 
         .history-showcase {
-            @include size(100%, 80%);
-            @include flex-col(start, space-between);
-            // background-color: $gray-1;
+            @include size(100%, 85%);
+            @include flex-col(center, space-between);
+            // background-color: $gray-3;
 
             .history-content {
-                @include size(100%, 20%);
-                @include flex-row(space-between, center);
-                background-color: $gray-3;
-
-                .history-date {
-                    @include size(15%, 80%);
-                    @include flex-row(start, center);
-                }
-
-                .history-text {
-                    @include size(85%, 80%);
-                    @include flex-row(start, center);
-                    // background-color: $gray-1;
-
-                }
+                @include size(50%, 20%);
+                @include flex-col(center, center);
+                @include font(20px, 400, 'Arial', black);
+                // background-color: $gray-1;
             }
+
         }
 
+    }
+
+    .info-area {
+        @include size(100%, 35%);
+        @include flex-row(space-between, center);
+        padding: 0 5%;
+        padding-top: 5%;
+        // background-color: $gray-2;
+
+        .info-card {
+            @include size(30%, 80%);
+            @include flex-col(center, space-between);
+            // background-color: $gray-3;
+
+            .info-name {
+                @include size(100%, 10%);
+                @include flex-row(center, center);
+                @include font(32px, 400, 'Arial', black);
+                text-decoration: underline;
+                // background-color: $gray-1
+            }
+
+            .swiper {
+                @include size(100%, 70%);
+
+                .swiper-slide {
+                    background-color: $gray-2;
+                    text-align: center;
+                    font-size: 18px;
+                    /* Center slide text vertically */
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    -webkit-align-items: center;
+                    align-items: center;
+
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .info-btn {
+                @include size(100%, 10%);
+                @include flex-row(center, center);
+                @include font(20px, 400, 'Arial', black);
+                // background-color: $gray-1;
+            }
+
+        }
+    }
+
+    .client-area {
+        @include size(100%, 20%);
+        @include flex-col(center, space-between);
+        background-color: $gray-2;
+
+        .client-title {
+            @include size(50%, 10%);
+            @include font(32px, 400, 'Arial', black);
+            @include flex-row(center, center);
+            text-decoration: underline;
+            background-color: $gray-1;
+        }
     }
 }

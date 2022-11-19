@@ -107,7 +107,7 @@ header {
 
                 a {
                     @include font(32px, none, 'Arial', white);
-
+                    @include flex-row(center, center);
                 }
             }
         }
@@ -170,8 +170,19 @@ header {
             @include flex-row(space-between, center);
             // background-color: $gray-1;
 
-            .icon-style {
-                @include font(44px, none, none, white);
+            a {
+                @include size(50px, 50px);
+
+                img {
+                    @include size(100%, 100%);
+                    object-fit: contain;
+                }
+            }
+
+            :nth-child(2) {
+                img {
+                    @include size(90%, 100%);
+                }
             }
         }
     }
@@ -213,7 +224,7 @@ footer {
         }
 
         .business-hours {
-            @include font(20px, 400,none, black);
+            @include font(20px, 400, none, black);
             letter-spacing: 2px;
 
             li {
@@ -222,11 +233,22 @@ footer {
         }
 
         .footer-social-media-area {
-            @include size(25%, 20%);
+            @include size(30%, 20%);
             @include flex-row(space-between, center);
 
-            .footer-icon-style {
-                @include font(44px, none, none, black);
+            a {
+                @include size(50px, 50px);
+
+                img {
+                    @include size(100%, 100%);
+                    object-fit: contain;
+                }
+            }
+
+            :nth-child(2) {
+                img {
+                    @include size(100%, 100%);
+                }
             }
         }
     }
@@ -247,7 +269,7 @@ footer {
         position: absolute;
         bottom: 0;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
 
         span {
             a {
