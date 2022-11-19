@@ -115,7 +115,7 @@ main {
 
         .news-area {
             // display: none !important;
-            @include size(100%, 742px);
+            @include size(100%, 700px);
             @include flex-col(start, space-around);
             padding: 0 10%;
             background-color: white;
@@ -309,7 +309,7 @@ main {
                     @include flex-row(center, center);
                     background-color: $brown;
                     border-radius: 40px;
-                    // margin-right: 5px;
+                    margin-right: 10px;
                 }
             }
         }
