@@ -87,7 +87,9 @@ main {
             @include position-center();
 
         }
+
     }
+
 
     #bulletin-board {
         @include size(100%, auto);
@@ -119,13 +121,14 @@ main {
             @include flex-col(start, space-around);
             padding: 0 10%;
             background-color: white;
-
+        
 
 
             .news-card-area {
                 @include size(100%, 200px);
                 @include flex-row(space-between, center);
                 // background-color: $gray-2;
+                
 
                 .news-card {
                     @include size(45%, 100%);
@@ -199,15 +202,15 @@ main {
 
         .employ-area {
             @include size(100%, auto);
-            padding: 5% 0;
+            padding: 0 10%;
+            padding-bottom: 5%;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
             align-content: space-around;
-            background-color: $gray-1;
-
-            display: none !important;
+            // background-color: $gray-1;
+            // display: none !important;
 
             .employ-card {
                 @include size(45%, 300px);
@@ -226,7 +229,7 @@ main {
                     // background-color: $gray-2;
 
                     .card-title {
-                        @include size(30%, 37px);
+                        @include size(40%, 37px);
                         @include font(24px, 400, 'Arial', black);
                         margin-bottom: 10px;
                     }
@@ -238,7 +241,7 @@ main {
                     }
 
                     a {
-                        @include size(20%, 19px);
+                        @include size(30%, 19px);
                         @include font(14px, 400, 'Arial', black);
                         text-decoration: none;
 
@@ -411,4 +414,11 @@ main {
             }
         }
     }
+}
+
+
+//--control of bulletin-board
+
+.area_none{
+    display: none !important;
 }

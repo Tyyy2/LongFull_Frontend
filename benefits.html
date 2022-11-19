@@ -8,7 +8,9 @@
   <title>Document</title>
   <link rel="stylesheet" href="./css/header&footer.css">
   <link rel="stylesheet" href="./css/benefits.css">
+
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 
 <body>
@@ -28,17 +30,19 @@
 
         <li class="nav-btn btn-aboutUs"><a href="/aboutUs.html">關於我們</a>
           <ul>
-            <li><a href="/aboutUs.html">證照執照</a></li>
-            <li><a href="/aboutUs.html">設備機具</a></li>
-            <li><a href="/aboutUs.html">創建歷史</a></li>
+
+            <li><a href="/aboutUs.html#info-area">證照執照</a></li>
+            <li><a href="/aboutUs.html#info-area">設備機具</a></li>
+            <li><a href="/aboutUs.html#history-area">創建歷史</a></li>
+
             <li><a href="/benefits.html">員工福利</a></li>
           </ul>
         </li>
 
-        <li class="nav-btn"><a href="#bulletin-board">最新消息</a>
+        <li class="nav-btn"><a href="/index.html#bulletin-board">最新消息</a>
           <ul>
-            <li><a href="#bulletin-board">最新消息</a></li>
-            <li><a href="#bulletin-board">人員招募</a></li>
+            <li><a href="/index.html#bulletin-board">最新消息</a></li>
+
           </ul>
         </li>
 
@@ -67,10 +71,12 @@
 
   <main>
     <div class="benefits-btns">
+
       <button onclick="picShow('springParty')">春酒</button>
       <button onclick="picShow('healthCheck')">體檢</button>
     </div>
     <div class="benefits-card-wrap">
+
     </div>
   </main>
 
@@ -111,6 +117,7 @@
           target="_blank"> 隱私權政策</a></span></div>
   </footer>
 
+
   <script>
     const cardWrap = document.querySelector('.benefits-card-wrap')
     const btns = document.querySelectorAll('main button')
@@ -138,6 +145,7 @@ function lightbox() {
   
 }
   </script>
+
 </body>
 
 </html>
