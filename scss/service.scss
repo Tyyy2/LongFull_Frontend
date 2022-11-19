@@ -71,10 +71,14 @@ $light_green: #9CCFB8;
     font-family: Arial;
 }
 
+img{
+    object-fit: contain;
+}
+
 main {
     width: 100%;
-    height: 1253px;
-    padding: 100px 22.5% 124px;
+    height: 800px;
+    padding: 100px 22.5% 100px;
     position: relative;
 
     .service-btns {
@@ -112,8 +116,9 @@ main {
 
             img {
                 width: 100%;
-                height: 297px;
+                height: 160px;
                 object-fit: contain;
+                object-position: top;
             }
 
         }

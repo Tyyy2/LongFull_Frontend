@@ -69,10 +69,10 @@
 
   <main>
     <div class="service-btns">
-      <button onclick="picShow('equipment')">設備機具</button>
-      <button onclick="picShow('license')">執照證照</button>
-      <button onclick="picShow('socialService')">公益實績</button>
-      <button onclick="picShow('else')">其他</button>
+      <button onclick="picShow('equipment',10)">設備機具</button>
+      <button onclick="picShow('license',9)">執照證照</button>
+      <button onclick="picShow('socialService',8)">公益實績</button>
+      <button onclick="picShow('else',3)">其他</button>
     </div>
     <div class="service-card-wrap">
     </div>
@@ -118,13 +118,13 @@
   <script>
     const cardWrap = document.querySelector('.service-card-wrap')
     const btns = document.querySelectorAll('main button')
-    function picShow(type) {
+    function picShow(type,qty) {
       btns.forEach(btn => {
         btn.classList.remove('active')
       });
       event.target.classList.add('active')
       cardWrap.innerHTML=''
-      for (let index = 1; index < 10; index++) {
+      for (let index = 1; index < qty; index++) {
         cardWrap.innerHTML += `
             <div class="service-card">
               <img onclick=lightbox() src="./img/${type}/${index}.jpg" alt="">
@@ -137,7 +137,7 @@
   Swal.fire({
       imageUrl: `${event.target.src}`,
       imageHeight: 500,
-      imageAlt: 'A tall image'
+      imageAlt: '服務照片'
     })
 }
   </script>
