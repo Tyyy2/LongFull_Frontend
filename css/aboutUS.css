@@ -36,7 +36,7 @@ main .slogan-area .slogan-content :nth-child(3) {
 main .slogan-area .slogan-content :nth-child(4) {
   transform: translateX(10%);
 }
-main .history-area {
+main #history-area {
   width: 100%;
   height: 35%;
   display: flex;
@@ -44,7 +44,7 @@ main .history-area {
   justify-content: space-between;
   align-items: center;
 }
-main .history-area .history-title {
+main #history-area .history-title {
   width: 20%;
   height: 10%;
   font-size: 32px;
@@ -55,7 +55,7 @@ main .history-area .history-title {
   justify-content: center;
   align-items: center;
 }
-main .history-area .history-showcase {
+main #history-area .history-showcase {
   width: 100%;
   height: 85%;
   display: flex;
@@ -63,7 +63,7 @@ main .history-area .history-showcase {
   justify-content: space-between;
   align-items: center;
 }
-main .history-area .history-showcase .history-content {
+main #history-area .history-showcase .history-content {
   width: 50%;
   height: 20%;
   display: flex;
@@ -75,7 +75,7 @@ main .history-area .history-showcase .history-content {
   font-family: "Arial";
   color: black;
 }
-main .info-area {
+main #info-area {
   width: 100%;
   height: 35%;
   display: flex;
@@ -84,7 +84,7 @@ main .info-area {
   padding: 0 5%;
   padding-top: 5%;
 }
-main .info-area .info-card {
+main #info-area .info-card {
   width: 30%;
   height: 80%;
   display: flex;
@@ -92,7 +92,7 @@ main .info-area .info-card {
   justify-content: space-between;
   align-items: center;
 }
-main .info-area .info-card .info-name {
+main #info-area .info-card .info-name {
   width: 100%;
   height: 10%;
   display: flex;
@@ -104,12 +104,11 @@ main .info-area .info-card .info-name {
   color: black;
   text-decoration: underline;
 }
-main .info-area .info-card .swiper {
+main #info-area .info-card .swiper {
   width: 100%;
   height: 70%;
 }
-main .info-area .info-card .swiper .swiper-slide {
-  background-color: rgb(180, 180, 180);
+main #info-area .info-card .swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
   /* Center slide text vertically */
@@ -126,13 +125,16 @@ main .info-area .info-card .swiper .swiper-slide {
   -webkit-align-items: center;
   align-items: center;
 }
-main .info-area .info-card .swiper .swiper-slide img {
+main #info-area .info-card .swiper .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
-main .info-area .info-card .info-btn {
+main #info-area .info-card a {
+  text-decoration: none;
+}
+main #info-area .info-card a .info-btn {
   width: 100%;
   height: 10%;
   display: flex;
@@ -182,7 +184,7 @@ main .client-area .client-showcase .client-card {
 main .client-area .client-showcase .client-card img {
   width: 100%;
   height: 80%;
-  object-fit: cover;
+  object-fit: contain;
 }
 main .client-area .client-showcase .client-card .client-name {
   width: 100%;
