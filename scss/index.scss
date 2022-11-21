@@ -213,14 +213,19 @@ main {
             // display: none !important;
 
             .employ-card {
-                @include size(45%, 300px);
+                @include size(45%, 200px);
                 @include flex-row(space-between, center);
+                // border: 1px solid black;
                 // background-color: $gray-3;
 
                 .card-img {
                     @include size(202px, 177px);
                     background-color: $gray-2;
                     margin-right: 20px;
+                    img{
+                        @include size(100%,100% );
+                        object-fit: contain;
+                    }
                 }
 
                 .card-info-area {
