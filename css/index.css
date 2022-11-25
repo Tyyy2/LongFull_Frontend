@@ -408,4 +408,22 @@ main .introduction-area #question-board .question-showcase .question-content .an
 
 .area_none {
   display: none !important;
+}
+
+@media screen and (min-width: 781px) and (max-width: 1240px) {
+  main #bulletin-board .news-area .news-card-area .news-card .card-info-area .card-title {
+    width: 80%;
+    height: 37px;
+  }
+  main #bulletin-board .employ-area .employ-card .card-info-area a {
+    width: 80%;
+    height: 19px;
+  }
+  main .introduction-area .service-series .service-showcase {
+    justify-content: space-between;
+  }
+  main .introduction-area .service-series .service-showcase .service-item {
+    width: 312px;
+    height: 80px;
+  }
 }/*# sourceMappingURL=index.css.map */

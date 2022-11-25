@@ -326,6 +326,8 @@ footer {
         top: 0;
 
         .nav-bar {
+            @include flex-row(center, center);
+
             .logo-container {
                 @include size(90%, 100%);
                 @include flex-row(center, center);
@@ -467,6 +469,10 @@ footer {
 
             .footer-social-media-area {
                 @include size(35%, 20%);
+
+                a {
+                    @include size(40px, 40px);
+                }
 
             }
         }

@@ -255,6 +255,11 @@ footer .copy-right span a {
     position: fixed;
     top: 0;
   }
+  header .nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   header .nav-bar .logo-container {
     width: 90%;
     height: 100%;
@@ -405,6 +410,10 @@ footer .copy-right span a {
   footer .footer-info .footer-social-media-area {
     width: 35%;
     height: 20%;
+  }
+  footer .footer-info .footer-social-media-area a {
+    width: 40px;
+    height: 40px;
   }
   footer .google-map {
     width: 80%;
