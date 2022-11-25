@@ -317,9 +317,9 @@ footer {
 //--End of 1240px
 
 
-//--RWD for 375px
+//--RWD for 780px
 
-@media screen and(max-width:375px) {
+@media screen and(max-width:780px) {
     header {
         @include size(100%, 60px);
         position: fixed;
