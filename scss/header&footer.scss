@@ -364,6 +364,8 @@ footer {
             right: 0;
             top: 0;
             transform: translateY(60px);
+            opacity: 0;
+            visibility: hidden;
 
             .phone-btn-list {
                 @include size(100%, auto);
@@ -504,8 +506,8 @@ footer {
     //--control of menu
 
     .phone-menu-toggle {
-        opacity: 0;
-        visibility: hidden !important;
+        opacity: 1 !important;
+        visibility: visible !important;
     }
 
     .about-list-toggle {

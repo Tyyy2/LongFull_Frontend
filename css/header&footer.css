@@ -288,6 +288,8 @@ footer .copy-right span a {
     right: 0;
     top: 0;
     transform: translateY(60px);
+    opacity: 0;
+    visibility: hidden;
   }
   header .phone-menu .phone-btn-list {
     width: 100%;
@@ -429,8 +431,8 @@ footer .copy-right span a {
     transform: translate(-50%, 100%);
   }
   .phone-menu-toggle {
-    opacity: 0;
-    visibility: hidden !important;
+    opacity: 1 !important;
+    visibility: visible !important;
   }
   .about-list-toggle {
     height: 150px !important;
