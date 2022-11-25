@@ -132,6 +132,22 @@ header .nav-bar .social-media-area :nth-child(2) img {
   width: 90%;
   height: 100%;
 }
+header .phone-ham {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(../img/phone_ham.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
+}
+header .phone-menu {
+  display: none;
+}
 
 footer {
   width: 100%;
@@ -220,4 +236,209 @@ footer .copy-right {
 }
 footer .copy-right span a {
   color: black;
+}
+
+@media screen and (min-width: 376px) and (max-width: 1241px) {
+  header .nav-bar {
+    padding: 0 5%;
+  }
+  header .nav-bar .nav-btn-list {
+    width: 50%;
+    height: 100%;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+  }
+  header .nav-bar .logo-container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .nav-bar .logo-container .logo {
+    width: 20%;
+    height: 100%;
+  }
+  header .nav-bar .logo-container .price-btn {
+    display: none;
+  }
+  header .nav-bar .nav-btn-list {
+    display: none;
+  }
+  header .nav-bar .social-media-area {
+    display: none;
+  }
+  header .phone-ham {
+    display: block;
+  }
+  header .phone-menu {
+    width: 142px;
+    height: auto;
+    display: block;
+    transition: 1s;
+    background-color: #00391F;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(60px);
+  }
+  header .phone-menu .phone-btn-list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .phone-menu .phone-btn-list .phone-btn {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: white;
+    margin: 10px 0;
+    list-style: none;
+  }
+  header .phone-menu .phone-btn-list .phone-btn a {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: white;
+    text-decoration: none;
+  }
+  header .phone-menu .phone-btn-list .phone-btn ul {
+    width: 100%;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+    background-color: #9CCFB8;
+  }
+  header .phone-menu .phone-btn-list .phone-btn ul li {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    list-style: none;
+  }
+  header .phone-menu .phone-btn-list .phone-btn ul li a {
+    color: #00391F;
+  }
+  header .phone-social-media {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .phone-social-media :nth-child(1) {
+    width: 35%;
+    height: 100%;
+    padding: 0 2%;
+    margin: 10px 0;
+  }
+  header .phone-social-media :nth-child(1) img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  header .phone-social-media :nth-child(2) {
+    width: 40%;
+    height: 100%;
+    padding: 0 5%;
+    margin: 30px 0;
+  }
+  header .phone-social-media :nth-child(2) img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  footer {
+    width: 100%;
+    height: 541px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+  }
+  footer .footer-logo {
+    width: 70px;
+    height: 85px;
+    transform: translateY(-40px);
+  }
+  footer .footer-info {
+    width: 100%;
+    height: 40%;
+    transform: translateY(-30px);
+  }
+  footer .footer-info .information {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: black;
+  }
+  footer .footer-info .business-hours {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: black;
+  }
+  footer .footer-info .footer-social-media-area {
+    width: 35%;
+    height: 20%;
+  }
+  footer .google-map {
+    width: 80%;
+    height: 25%;
+  }
+  footer .copy-right {
+    width: 70%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    transform: translate(-50%, -70%);
+  }
+  footer .copy-right span {
+    width: 30%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+  }
+  .phone-menu-toggle {
+    opacity: 0;
+    visibility: hidden !important;
+  }
+  .about-list-toggle {
+    height: 150px !important;
+  }
+  .news-list-toggle {
+    height: 75px !important;
+  }
+  .service-list-toggle {
+    height: 75px !important;
+  }
 }/*# sourceMappingURL=header&footer.css.map */

@@ -186,6 +186,23 @@ header {
             }
         }
     }
+
+    .phone-ham {
+        @include size(30px, 30px);
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(../img/phone_ham.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: none;
+    }
+
+    .phone-menu {
+        display: none
+    }
 }
 
 
@@ -278,3 +295,232 @@ footer {
         }
     }
 }
+
+
+//--RWD for 1240px
+@media screen and(min-width:376px) and (max-width:1241px) {
+    header {
+
+        .nav-bar {
+            padding: 0 5%;
+
+            .nav-btn-list {
+                @include size(50%, 100%);
+                margin-left: 0;
+            }
+        }
+
+
+    }
+}
+
+//--End of 1240px
+
+
+//--RWD for 375px
+
+@media screen and(max-width:375px) {
+    header {
+        @include size(100%, 60px);
+        position: fixed;
+        top: 0;
+
+        .nav-bar {
+            .logo-container {
+                @include size(90%, 100%);
+                @include flex-row(center, center);
+
+                .logo {
+                    @include size(20%, 100%);
+                }
+
+                .price-btn {
+                    display: none;
+                }
+            }
+
+            .nav-btn-list {
+                display: none;
+            }
+
+            .social-media-area {
+                display: none;
+            }
+        }
+
+        .phone-ham {
+            display: block;
+
+
+
+        }
+
+        .phone-menu {
+            @include size(142px, auto);
+            display: block;
+            transition: 1s;
+            background-color: $deep_green;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: translateY(60px);
+
+            .phone-btn-list {
+                @include size(100%, auto);
+                @include flex-col(center, space-between);
+
+                .phone-btn {
+                    @include size(100%, auto);
+                    @include flex-col(center, center);
+                    @include font(20px, 400, 'Arial', white);
+                    margin: 10px 0;
+                    list-style: none;
+
+                    a {
+                        @include font(20px, 400, 'Arial', white);
+                        text-decoration: none;
+                    }
+
+
+
+                    ul {
+                        @include size(100%, 0);
+                        @include flex-col(center, space-between);
+                        // display: none;
+                        transition: 1s;
+                        background-color: $light_green;
+
+                        li {
+                            @include size(100%, auto);
+                            @include flex-row(center, center);
+                            padding: 5px 0;
+                            list-style: none;
+
+                            a {
+                                color: $deep_green;
+                            }
+
+                        }
+                    }
+                }
+
+
+            }
+
+        }
+
+        .phone-social-media {
+            @include size(100%, auto);
+            @include flex-row(center, center);
+
+            :nth-child(1) {
+                @include size(35%, 100%);
+                padding: 0 2%;
+                margin: 10px 0;
+
+                img {
+                    @include size(100%, 100%);
+                    object-fit: contain;
+                }
+            }
+
+            :nth-child(2) {
+                @include size(40%, 100%);
+                padding: 0 5%;
+                margin: 30px 0;
+
+                img {
+                    @include size(100%, 100%);
+                    object-fit: contain;
+                }
+            }
+
+
+        }
+    }
+
+
+    footer {
+        @include size(100%, 541px);
+        @include flex-col(center, center);
+        padding: 0 5%;
+
+        .footer-logo {
+            @include size(70px, 85px);
+            transform: translateY(-40px);
+        }
+
+        .footer-info {
+            @include size(100%, 40%);
+            transform: translateY(-30px);
+
+            .information {
+                @include font(16px, 400, 'Arial', black);
+            }
+
+            .business-hours {
+                @include font(16px, 400, 'Arial', black);
+
+            }
+
+            .footer-social-media-area {
+                @include size(35%, 20%);
+
+            }
+        }
+
+        .google-map {
+            @include size(80%, 25%);
+        }
+
+        .copy-right {
+            @include size(70%, 5%);
+            @include flex-row(center, center);
+            font-size: 14px;
+            transform: translate(-50%, -70%);
+
+
+            span {
+                @include size(30%, 50%);
+                @include flex-row(center, center);
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 100%);
+
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+    //--control of menu
+
+    .phone-menu-toggle {
+        opacity: 0;
+        visibility: hidden !important;
+    }
+
+    .about-list-toggle {
+        height: 150px !important;
+    }
+
+    .news-list-toggle {
+        height: 75px !important;
+    }
+
+    .service-list-toggle {
+        height: 75px !important;
+    }
+
+    //--End of control
+}
+
+//--End of 375px
