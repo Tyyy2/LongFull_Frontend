@@ -82,8 +82,12 @@ main #bulletin-board .news-area .news-card-area .news-card {
 main #bulletin-board .news-area .news-card-area .news-card .card-img {
   width: 202px;
   height: 177px;
-  background-color: rgb(180, 180, 180);
   margin-right: 20px;
+}
+main #bulletin-board .news-area .news-card-area .news-card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 main #bulletin-board .news-area .news-card-area .news-card .card-info-area {
   width: calc(100% - 202px);
@@ -425,5 +429,49 @@ main .introduction-area #question-board .question-showcase .question-content .an
   main .introduction-area .service-series .service-showcase .service-item {
     width: 312px;
     height: 80px;
+  }
+}
+@media screen and (max-width: 780px) {
+  main #bulletin-board {
+    padding: 70px 0;
+  }
+  main #bulletin-board .news-area {
+    width: 100%;
+    height: 750px;
+  }
+  main #bulletin-board .news-area .news-card-area {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main #bulletin-board .news-area .news-card-area .news-card {
+    width: 100%;
+    height: 45%;
+  }
+  main #bulletin-board .news-area .news-card-area .news-card .card-img {
+    width: 20%;
+    height: 100%;
+  }
+  main #bulletin-board .news-area .news-card-area .news-card .card-info-area {
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  main #bulletin-board .news-area .news-detail-area .news-detail {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+  }
+  main #bulletin-board .news-area .news-detail-area .news-detail .news-detail-content {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=index.css.map */

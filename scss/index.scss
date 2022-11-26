@@ -137,8 +137,13 @@ main {
 
                     .card-img {
                         @include size(202px, 177px);
-                        background-color: $gray-2;
+                        // background-color: $gray-2;
                         margin-right: 20px;
+
+                        img {
+                            @include size(100%, 100%);
+                            object-fit: contain;
+                        }
                     }
 
                     .card-info-area {
@@ -466,6 +471,54 @@ main {
 
                     .service-item {
                         @include size(312px, 80px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+//-End of 1240px
+
+
+
+//--RWD for 780px
+
+@media screen and(max-width:780px) {
+    main {
+        #bulletin-board {
+            padding: 70px 0;
+
+            .news-area {
+                @include size(100%, 750px);
+
+                .news-card-area {
+                    @include size(100%, 40%);
+                    @include flex-col(center, space-between);
+
+                    .news-card {
+                        @include size(100%, 45%);
+
+                        .card-img {
+                            @include size(20%, 100%);
+
+                        }
+
+                        .card-info-area {
+                            @include size(70%, 90%);
+                            @include flex-col(start, start);
+                        }
+                    }
+                }
+
+                .news-detail-area {
+                    .news-detail {
+                        @include size(100%, 20%);
+                        @include flex-col(start, space-between);
+
+                        .news-detail-content {
+                            font-size: 14px;
+                        }
                     }
                 }
             }
