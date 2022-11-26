@@ -523,5 +523,17 @@ main {
                 }
             }
         }
+
+        .introduction-area {
+            .service-series {
+                .service-title {}
+
+                .service-showcase {
+                    .service-item {
+                        @include size(140px, 35px);
+                    }
+                }
+            }
+        }
     }
 }

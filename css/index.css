@@ -474,4 +474,8 @@ main .introduction-area #question-board .question-showcase .question-content .an
   main #bulletin-board .news-area .news-detail-area .news-detail .news-detail-content {
     font-size: 14px;
   }
+  main .introduction-area .service-series .service-showcase .service-item {
+    width: 140px;
+    height: 35px;
+  }
 }/*# sourceMappingURL=index.css.map */
