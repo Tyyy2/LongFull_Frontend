@@ -19,6 +19,7 @@ main .benefits-btns {
   position: absolute;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   left: 12.76%;
   top: 104px;
 }
@@ -51,4 +52,36 @@ main .benefits-card-wrap .benefits-card img {
   height: 160px;
   object-fit: contain;
   object-position: top;
+}
+
+@media screen and (max-width: 780px) {
+  main {
+    height: 911px;
+    padding: 110px 17px 67px;
+  }
+  main .benefits-btns {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 227px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 79px;
+  }
+  main .benefits-btns button {
+    margin-bottom: 7px;
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #D59F00;
+    border: none;
+    font-size: 24px;
+    color: #00468E;
+  }
+  main .benefits-card-wrap .benefits-card {
+    width: 42.67%;
+  }
+  main .benefits-card-wrap .benefits-card img {
+    object-position: center;
+  }
 }/*# sourceMappingURL=benefits.css.map */

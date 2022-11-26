@@ -8,7 +8,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="./css/header&footer.css">
   <link rel="stylesheet" href="./css/service.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
@@ -120,8 +120,17 @@
       <button onclick="picShow('socialService',8)">公益實績</button>
       <button onclick="picShow('else',3)">其他</button>
     </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/socialService/socialServiceSwiper1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./img/socialService/socialServiceSwiper2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./img/socialService/socialServiceSwiper3.jpg" alt=""></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+  </div>
     <div class="service-card-wrap">
-
     </div>
   </main>
 
@@ -163,33 +172,62 @@
   </footer>
 
   <script src="./js/header.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
   <script>
     const cardWrap = document.querySelector('.service-card-wrap')
     const btns = document.querySelectorAll('main button')
-    function picShow(type,qty) {
+    var swiper = new Swiper(".mySwiper", {
+          cssMode: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          mousewheel: true,
+          keyboard: true,
+        });
+
+    function picShow(type, qty) {
       btns.forEach(btn => {
         btn.classList.remove('active')
       });
       event.target.classList.add('active')
-      cardWrap.innerHTML=''
-      for (let index = 1; index < qty; index++) {
-        cardWrap.innerHTML += `
+      cardWrap.innerHTML = ''
+      if (type == 'socialService') {
+        document.querySelector('main').classList.add('active')
+        document.querySelector('.swiper').classList.add('active')
+        cardWrap.classList.add('active')
+        for (let index = 1; index < qty; index++) {
+          cardWrap.innerHTML += `
+            <div class="service-card active">
+              <img onclick=lightbox() src="./img/${type}/${index}.jpg" alt="">
+          </div>
+          `
+        }
+      } else {
+        document.querySelector('main').classList.remove('active')
+        document.querySelector('.swiper').classList.remove('active')
+        cardWrap.classList.remove('active')
+        for (let index = 1; index < qty; index++) {
+          cardWrap.innerHTML += `
             <div class="service-card">
               <img onclick=lightbox() src="./img/${type}/${index}.jpg" alt="">
           </div>
           `
+        }
       }
     }
 
     function lightbox() {
-  Swal.fire({
-      imageUrl: `${event.target.src}`,
-      imageHeight: 500,
-      imageAlt: '服務照片'
-    })
-}
+      Swal.fire({
+        imageUrl: `${event.target.src}`,
+        imageHeight: 500,
+        imageAlt: '服務照片'
+      })
+    }
   </script>
 
 </body>
