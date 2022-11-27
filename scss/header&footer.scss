@@ -109,6 +109,10 @@ header {
                     @include font(32px, none, 'Arial', white);
                     @include flex-row(center, center);
                 }
+
+                img {
+                    transform: translateX(20%);
+                }
             }
         }
 
@@ -118,7 +122,6 @@ header {
             @include size(50%, 100%);
             @include flex-row(space-between, center);
             margin-left: 10%;
-            // background-color: $gray-4;
 
             .nav-btn {
                 @include size(119px, 37px);
@@ -232,6 +235,7 @@ footer {
 
 
         .information {
+            @include size(100%, auto);
             @include font(20px, 400, 'Arial', black);
             letter-spacing: 2px;
 
@@ -241,6 +245,8 @@ footer {
         }
 
         .business-hours {
+            @include size(100%, auto);
+
             @include font(20px, 400, none, black);
             letter-spacing: 2px;
 
@@ -250,8 +256,8 @@ footer {
         }
 
         .footer-social-media-area {
-            @include size(30%, 20%);
-            @include flex-row(space-between, center);
+            @include size(100%, 20%);
+            @include flex-row(start, center);
 
             a {
                 @include size(50px, 50px);
@@ -297,20 +303,109 @@ footer {
 }
 
 
+
+
+//--RWD for 1440px
+@media screen and(min-width:1241px) and (max-width:1440px) {
+    header {
+        .nav-bar {
+            padding: 0 5%;
+
+            .nav-btn-list {}
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//--End of 1440px
+
+
 //--RWD for 1240px
-@media screen and(min-width:781px) and (max-width:1241px) {
+@media screen and(min-width:781px) and (max-width:1240px) {
     header {
 
         .nav-bar {
             padding: 0 5%;
 
-            .nav-btn-list {
-                @include size(50%, 100%);
-                margin-left: 0;
+            .logo-container {
+                .price-btn {
+                    @media screen and(min-width:826px) and (max-width:930px) {
+
+                        @include size(auto, 57px);
+
+                        a {
+                            @include font(24px, none, 'Arial', white);
+                            @include flex-row(center, center);
+                        }
+
+                        img {
+                            @include size(40px, 40px);
+                            object-fit: contain;
+                            transform: translateX(10%);
+
+                        }
+                    }
+
+                    @media screen and(min-width:781px) and (max-width:825px) {
+
+                        @include size(auto, 57px);
+
+                        a {
+                            @include font(20px, none, 'Arial', white);
+                            @include flex-row(center, center);
+                        }
+
+                        img {
+                            @include size(30px, 30px);
+                            object-fit: contain;
+                            transform: translateX(10%);
+
+                        }
+                    }
+                }
             }
+
+            .nav-btn-list {
+                @include size(60%, 100%);
+                margin-left: 0;
+
+                @media screen and(min-width:781px) and (max-width:930px) {
+
+                    .nav-btn {
+                        a {
+                            @include font(20px, none, 'Arial', white);
+
+                        }
+                    }
+                }
+            }
+
+            .social-media-area {
+                @media screen and(min-width:781px) and (max-width:930px) {
+                    a {
+                        @include size(30px, 30px);
+                    }
+                }
+            }
+
+
         }
 
 
+    }
+
+    footer {
+        padding: 0 5%;
     }
 }
 
@@ -447,7 +542,10 @@ footer {
     footer {
         @include size(100%, 541px);
         @include flex-col(center, center);
+
         padding: 0 5%;
+
+
 
         .footer-logo {
             @include size(70px, 85px);
@@ -456,10 +554,18 @@ footer {
 
         .footer-info {
             @include size(100%, 40%);
+            @include flex-col(center, center);
+            margin: 0;
             transform: translateY(-30px);
+            padding: 0 25%;
+
+            @media screen and(max-width:500px) {
+                padding: 0 15%;
+            }
 
             .information {
                 @include font(16px, 400, 'Arial', black);
+
             }
 
             .business-hours {
@@ -468,7 +574,7 @@ footer {
             }
 
             .footer-social-media-area {
-                @include size(35%, 20%);
+                @include size(100%, 20%);
 
                 a {
                     @include size(40px, 40px);
@@ -531,4 +637,4 @@ footer {
     //--End of control
 }
 
-//--End of 375px
+//--End of 780px
