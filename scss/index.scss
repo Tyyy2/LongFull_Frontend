@@ -152,7 +152,7 @@ main {
                         // background-color: $gray-2;
 
                         .card-title {
-                            @include size(50%, 37px);
+                            @include size(100%, 37px);
                             @include font(24px, 400, 'Arial', black);
                             margin-bottom: 10px;
                         }
@@ -282,8 +282,9 @@ main {
         }
 
         .slogan {
-            @include size(auto, 41px);
+            @include size(60%, 41px);
             @include font(36px, 400, 'Arial', white);
+            @include flex-row(space-between, center);
             // background-color: $gray-1;
         }
     }
@@ -441,17 +442,7 @@ main {
 @media screen and (min-width:781px) and(max-width:1240px) {
     main {
         #bulletin-board {
-            .news-area {
-                .news-card-area {
-                    .news-card {
-                        .card-info-area {
-                            .card-title {
-                                @include size(80%, 37px);
-                            }
-                        }
-                    }
-                }
-            }
+
 
             .employ-area {
                 .employ-card {
@@ -524,16 +515,44 @@ main {
             }
         }
 
+        .banner2 {
+            .slogan {
+                @include size(450px, auto);
+                @include flex-row(space-between, space-between);
+                flex-wrap: wrap;
+            }
+        }
+
+
         .introduction-area {
             .service-series {
-                .service-title {}
+                .service-title {
+                    @include size(100%, 50px);
+                    @include flex-row(center, center);
+                    @include font(20px, 400, 'Arial', black);
+
+                }
 
                 .service-showcase {
+                    justify-content: space-between;
+
                     .service-item {
                         @include size(140px, 35px);
+                        margin: 0 10%;
+                        @include font(14px, 400, 'Arial', white);
+
+                        @media screen and(max-width:600px) {
+                            margin: 0 5%;
+                        }
+
+                        @media screen and(max-width:450px) {
+                            margin: 0;
+                        }
                     }
                 }
             }
+
+            #question-board {}
         }
     }
 }
