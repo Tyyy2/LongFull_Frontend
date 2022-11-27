@@ -18,23 +18,65 @@ main .slogan-area .slogan-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
 }
+@media screen and (min-width: 781px) and (max-width: 1240px) {
+  main .slogan-area .slogan-content {
+    width: 60%;
+    height: 40%;
+  }
+}
 main .slogan-area .slogan-content .slogan-text {
   font-size: 36px;
   font-weight: 400;
   font-family: "Arial";
   color: black;
 }
+@media screen and (min-width: 806px) and (max-width: 1240px) {
+  main .slogan-area .slogan-content .slogan-text {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: black;
+  }
+}
+@media screen and (min-width: 781px) and (max-width: 805px) {
+  main .slogan-area .slogan-content .slogan-text {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: black;
+  }
+}
 main .slogan-area .slogan-content :nth-child(1) {
   transform: translateX(-10%);
+}
+@media screen and (min-width: 781px) and (max-width: 1240px) {
+  main .slogan-area .slogan-content :nth-child(1) {
+    transform: translateX(-15%);
+  }
 }
 main .slogan-area .slogan-content :nth-child(2) {
   transform: translateX(-5%);
 }
+@media screen and (min-width: 781px) and (max-width: 1240px) {
+  main .slogan-area .slogan-content :nth-child(2) {
+    transform: translateX(-10%);
+  }
+}
 main .slogan-area .slogan-content :nth-child(3) {
   transform: translateX(5%);
 }
+@media screen and (min-width: 781px) and (max-width: 1240px) {
+  main .slogan-area .slogan-content :nth-child(3) {
+    transform: translateX(10%);
+  }
+}
 main .slogan-area .slogan-content :nth-child(4) {
   transform: translateX(10%);
+}
+@media screen and (min-width: 809px) and (max-width: 1240px) {
+  main .slogan-area .slogan-content :nth-child(4) {
+    transform: translateX(15%);
+  }
 }
 main #history-area {
   width: 100%;
@@ -45,7 +87,7 @@ main #history-area {
   align-items: center;
 }
 main #history-area .history-title {
-  width: 20%;
+  width: 100%;
   height: 10%;
   font-size: 32px;
   font-weight: 400;
@@ -54,6 +96,7 @@ main #history-area .history-title {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: underline;
 }
 main #history-area .history-showcase {
   width: 100%;
@@ -196,4 +239,131 @@ main .client-area .client-showcase .client-card .client-name {
   font-weight: 400;
   font-family: "Arial";
   color: black;
+}
+
+@media screen and (max-width: 780px) {
+  main {
+    height: 2200px;
+    transform: translateY(60px);
+  }
+  main .slogan-area .slogan-content {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-wrap: wrap;
+  }
+  main .slogan-area .slogan-content .slogan-text {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: black;
+  }
+  main .slogan-area .slogan-content :nth-child(1) {
+    transform: translateX(0);
+    margin-right: 50%;
+  }
+}
+@media screen and (max-width: 780px) and (max-width: 605px) {
+  main .slogan-area .slogan-content :nth-child(1) {
+    margin-right: 40%;
+  }
+}
+@media screen and (max-width: 780px) and (max-width: 505px) {
+  main .slogan-area .slogan-content :nth-child(1) {
+    margin-right: 15%;
+  }
+}
+@media screen and (max-width: 780px) {
+  main .slogan-area .slogan-content :nth-child(2) {
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 780px) {
+  main .slogan-area .slogan-content :nth-child(3) {
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 780px) {
+  main .slogan-area .slogan-content :nth-child(4) {
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 780px) {
+  main #history-area {
+    width: 100%;
+    height: 20%;
+  }
+  main #history-area .history-title {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: black;
+  }
+  main #history-area .history-showcase .history-content {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: black;
+  }
+}
+@media screen and (max-width: 780px) {
+  main #info-area {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  main #info-area .info-card {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main #info-area .info-card .info-name {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: black;
+    margin-bottom: 20px;
+  }
+  main #info-area .info-card a {
+    display: none;
+  }
+}
+@media screen and (max-width: 780px) {
+  main .client-area {
+    padding-top: 5%;
+  }
+  main .client-area .client-title {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: black;
+  }
+  main .client-area .client-showcase {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-wrap: wrap;
+  }
+  main .client-area .client-showcase .client-card {
+    width: 30%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 780px) {
+  footer {
+    transform: translateY(60px);
+  }
 }/*# sourceMappingURL=aboutUS.css.map */
