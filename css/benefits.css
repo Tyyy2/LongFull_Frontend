@@ -30,7 +30,7 @@ main .benefits-btns button {
   border-radius: 10px;
   background-color: #D59F00;
   border: none;
-  font-size: 24px;
+  font-size: clamp(16px, 1.25vw, 24px);
   color: #00468E;
 }
 main .benefits-btns button.active {
@@ -71,12 +71,6 @@ main .benefits-card-wrap .benefits-card img {
   main .benefits-btns button {
     margin-bottom: 7px;
     width: 100px;
-    height: 45px;
-    border-radius: 10px;
-    background-color: #D59F00;
-    border: none;
-    font-size: 24px;
-    color: #00468E;
   }
   main .benefits-card-wrap .benefits-card {
     width: 42.67%;

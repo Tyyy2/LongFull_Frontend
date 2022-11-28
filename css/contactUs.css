@@ -19,6 +19,7 @@ main form h2 {
   width: 7.71vw;
   height: 37px;
   border-bottom: 2px solid black;
+  font-size: clapm(20px, 1.67vw, 32px);
 }
 main form .contact-input-info {
   width: 19.27vw;
@@ -32,7 +33,7 @@ main form .contact-input-info label[for*=e] {
   height: 35px;
   background-color: #D59F00;
   color: #00468E;
-  font-size: 20px;
+  font-size: clamp(16px, 1.04vw, 20px);
   margin-bottom: 24px;
   text-indent: calc(3vw - 20px);
 }
@@ -47,7 +48,7 @@ main form .contact-input-info p {
   color: white;
   height: 38px;
   width: 12vw;
-  font-size: 20px;
+  font-size: clamp(16px, 1.04vw, 20px);
   line-height: 38px;
   text-align: center;
 }
@@ -59,7 +60,7 @@ main form .contact-input-info label[for*=common] {
   justify-content: space-between;
   background-color: #D59F00;
   color: #00468E;
-  font-size: 20px;
+  font-size: clamp(16px, 1.04vw, 20px);
   margin-top: 20px;
 }
 main form .contact-input-info label[for*=common] span {
@@ -80,7 +81,7 @@ main form .contact-input-context {
 main form .contact-input-context label {
   height: 38px;
   background-color: #00468E;
-  font-size: 20px;
+  font-size: clamp(16px, 1.04vw, 20px);
   color: white;
   line-height: 38px;
   text-indent: 5px;
@@ -125,7 +126,7 @@ main form > input {
     height: 35px;
     background-color: #D59F00;
     color: #00468E;
-    font-size: 20px;
+    font-size: clamp(16px, 1.04vw, 20px);
     margin-bottom: 24px;
     text-indent: calc(7vw - 20px);
   }
@@ -140,7 +141,7 @@ main form > input {
     color: white;
     height: 38px;
     width: 24vw;
-    font-size: 20px;
+    font-size: clamp(16px, 1.04vw, 20px);
     line-height: 38px;
     text-align: center;
   }
@@ -152,7 +153,7 @@ main form > input {
     justify-content: space-between;
     background-color: #D59F00;
     color: #00468E;
-    font-size: 20px;
+    font-size: clamp(16px, 1.04vw, 20px);
     margin-top: 20px;
   }
   main form .contact-input-info label[for*=common] span {
@@ -172,7 +173,7 @@ main form > input {
   main form .contact-input-context label {
     height: 38px;
     background-color: #00468E;
-    font-size: 20px;
+    font-size: clamp(16px, 1.04vw, 20px);
     color: white;
     line-height: 38px;
     text-indent: 5px;
