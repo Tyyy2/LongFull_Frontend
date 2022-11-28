@@ -96,7 +96,7 @@ main {
             border-radius: 10px;
             background-color: $brown;
             border: none;
-            font-size: 24px;
+            font-size: clamp(16px,1.25vw,24px);
             color: $blue;
 
             &.active {
@@ -145,12 +145,6 @@ main {
             button {
                 margin-bottom: 7px;
                 width: 100px;
-                height: 45px;
-                border-radius: 10px;
-                background-color: $brown;
-                border: none;
-                font-size: 24px;
-                color: $blue;
             }
         }
 
