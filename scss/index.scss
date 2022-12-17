@@ -154,7 +154,7 @@ main {
                         .card-title {
                             @include size(100%, 20%);
                             @include font(24px, 400, 'Arial', black);
-                            margin-bottom: 10px;
+                            margin-bottom: 20px;
                         }
 
                         .card-content {
@@ -226,7 +226,6 @@ main {
 
                 .card-img {
                     @include size(50%, 100%);
-                    background-color: $gray-2;
                     margin-right: 20px;
 
                     img {
@@ -243,7 +242,7 @@ main {
                     .card-title {
                         @include size(100%, 20%);
                         @include font(24px, 400, 'Arial', black);
-                        margin-bottom: 10px;
+                        margin-bottom: 20px;
                     }
 
                     .card-content {
